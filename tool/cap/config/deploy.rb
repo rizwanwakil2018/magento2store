@@ -3,9 +3,32 @@ lock "~> 3.11.0"
 
 set :application, "magento_store"
 set :repo_url, "git@github.com:rizwanwakil2018/magento2store.git"
-set :magento_deploy_languages, ['en_US', 'en_GB']
+set :magento_deploy_languages, ['en_US','en_GB']
+
 set :magento_auth_public_key, '6d304bfc5ac8e8cdac4c60c14247ca39'
 set :magento_auth_private_key, '65efe00a6ff3fcaf29d8ac13aef70531'
+
+set :magento_deploy_composer, false
+
+set :linked_files, [
+  'app/etc/env.php',
+  'app/etc/config.local.php',
+  'var/.setup_cronjob_status',
+  'var/.update_cronjob_status'
+]
+
+set :linked_dirs, [
+  'pub/media',
+  'pub/sitemaps',
+  'var/backups', 
+  'var/composer_home', 
+  'var/importexport', 
+  'var/import_history', 
+  'var/log',
+  'var/session', 
+  'var/tmp'
+]
+
 set :keep_releases, 3
 
 # Default branch is :master
