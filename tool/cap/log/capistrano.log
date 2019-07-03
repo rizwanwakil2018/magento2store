@@ -1,0 +1,422 @@
+# Logfile created on 2019-07-03 17:07:04 +0000 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-03 17:07:04 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [96e9984f] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [96e9984f] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [96e9984f] Finished in 1.876 seconds with exit status 1 (failed).
+  WARN [0;31mSkipping pending changes check on 34.76.138.14 (no REVISION file found)[0m
+ DEBUG [725d351c] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [725d351c] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [725d351c] Finished in 0.349 seconds with exit status 1 (failed).
+  INFO [84fb7e93] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [84fb7e93] Command: /usr/bin/env mkdir -p /tmp
+  INFO [84fb7e93] Finished in 0.405 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [2b9485bf] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [2b9485bf] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [2b9485bf] Finished in 0.261 seconds with exit status 0 (successful).
+  INFO [467908af] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [467908af] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [467908af] 	Warning: Permanently added the RSA host key for IP address '140.82.118.4' to the list of known hosts.
+ DEBUG [467908af] 	6531b98dd014c883fbdf3ed26a93cd2474474b27	HEAD
+  INFO [467908af] Finished in 3.931 seconds with exit status 0 (successful).
+  INFO [40107544] Running /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases as vagrant@34.76.138.14
+ DEBUG [40107544] Command: /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases
+ DEBUG [40107544] 	mkdir: 
+ DEBUG [40107544] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [40107544] 	: Permission denied
+ DEBUG [40107544] 	
+ DEBUG [40107544] 	mkdir: 
+ DEBUG [40107544] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [40107544] 	: Permission denied
+ DEBUG [40107544] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-03 17:08:19 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0eff287c] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [0eff287c] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [0eff287c] Finished in 1.896 seconds with exit status 1 (failed).
+  WARN [0;31mSkipping pending changes check on 34.76.138.14 (no REVISION file found)[0m
+ DEBUG [af0396b5] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [af0396b5] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [af0396b5] Finished in 0.509 seconds with exit status 1 (failed).
+  INFO [f704b83a] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [f704b83a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f704b83a] Finished in 1.067 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [5e1e27a9] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [5e1e27a9] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [5e1e27a9] Finished in 0.406 seconds with exit status 0 (successful).
+  INFO [1fc19321] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [1fc19321] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [1fc19321] 	6531b98dd014c883fbdf3ed26a93cd2474474b27	HEAD
+  INFO [1fc19321] Finished in 1.692 seconds with exit status 0 (successful).
+  INFO [acc3d80a] Running /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases as vagrant@34.76.138.14
+ DEBUG [acc3d80a] Command: /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases
+ DEBUG [acc3d80a] 	mkdir: 
+ DEBUG [acc3d80a] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [acc3d80a] 	: Permission denied
+ DEBUG [acc3d80a] 	
+ DEBUG [acc3d80a] 	mkdir: 
+ DEBUG [acc3d80a] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [acc3d80a] 	: Permission denied
+ DEBUG [acc3d80a] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-03 17:12:57 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2c444507] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [2c444507] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [2c444507] Finished in 2.011 seconds with exit status 1 (failed).
+  WARN [0;31mSkipping pending changes check on 34.76.138.14 (no REVISION file found)[0m
+ DEBUG [29375bbb] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [29375bbb] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [29375bbb] Finished in 0.321 seconds with exit status 1 (failed).
+  INFO [e0fcddc1] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [e0fcddc1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e0fcddc1] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [d340d1c0] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [d340d1c0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [d340d1c0] Finished in 0.252 seconds with exit status 0 (successful).
+  INFO [d9fd5f9f] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [d9fd5f9f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [d9fd5f9f] 	6531b98dd014c883fbdf3ed26a93cd2474474b27	HEAD
+  INFO [d9fd5f9f] Finished in 1.576 seconds with exit status 0 (successful).
+  INFO [cd4ebc82] Running /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases as vagrant@34.76.138.14
+ DEBUG [cd4ebc82] Command: /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases
+ DEBUG [cd4ebc82] 	mkdir: 
+ DEBUG [cd4ebc82] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [cd4ebc82] 	: Permission denied
+ DEBUG [cd4ebc82] 	
+ DEBUG [cd4ebc82] 	mkdir: 
+ DEBUG [cd4ebc82] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [cd4ebc82] 	: Permission denied
+ DEBUG [cd4ebc82] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-03 17:14:09 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b9232eb4] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [b9232eb4] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [b9232eb4] Finished in 1.669 seconds with exit status 1 (failed).
+  WARN [0;31mSkipping pending changes check on 34.76.138.14 (no REVISION file found)[0m
+ DEBUG [a975e362] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [a975e362] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [a975e362] Finished in 0.274 seconds with exit status 1 (failed).
+  INFO [15664c4c] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [15664c4c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [15664c4c] Finished in 0.386 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [9c22407b] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [9c22407b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [9c22407b] Finished in 0.395 seconds with exit status 0 (successful).
+  INFO [25b73a14] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [25b73a14] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [25b73a14] 	6531b98dd014c883fbdf3ed26a93cd2474474b27	HEAD
+  INFO [25b73a14] Finished in 1.521 seconds with exit status 0 (successful).
+  INFO [e500d328] Running /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases as vagrant@34.76.138.14
+ DEBUG [e500d328] Command: /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases
+ DEBUG [e500d328] 	mkdir: 
+ DEBUG [e500d328] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [e500d328] 	: Permission denied
+ DEBUG [e500d328] 	
+ DEBUG [e500d328] 	mkdir: 
+ DEBUG [e500d328] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [e500d328] 	: Permission denied
+ DEBUG [e500d328] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-03 17:15:05 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a1483e62] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [a1483e62] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [a1483e62] Finished in 1.880 seconds with exit status 1 (failed).
+  WARN [0;31mSkipping pending changes check on 34.76.138.14 (no REVISION file found)[0m
+ DEBUG [c321909b] Running [ -f /var/www/html/staging/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [c321909b] Command: [ -f /var/www/html/staging/current/REVISION ]
+ DEBUG [c321909b] Finished in 0.251 seconds with exit status 1 (failed).
+  INFO [6a3a0ab1] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [6a3a0ab1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6a3a0ab1] Finished in 0.427 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [f34ee95a] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [f34ee95a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [f34ee95a] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [b7aded91] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [b7aded91] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [b7aded91] 	6531b98dd014c883fbdf3ed26a93cd2474474b27	HEAD
+  INFO [b7aded91] Finished in 2.926 seconds with exit status 0 (successful).
+  INFO [51e7837a] Running /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases as vagrant@34.76.138.14
+ DEBUG [51e7837a] Command: /usr/bin/env mkdir -p /var/www/html/staging/shared /var/www/html/staging/releases
+ DEBUG [51e7837a] 	mkdir: 
+ DEBUG [51e7837a] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [51e7837a] 	: Permission denied
+ DEBUG [51e7837a] 	
+ DEBUG [51e7837a] 	mkdir: 
+ DEBUG [51e7837a] 	cannot create directory ‘/var/www/html/staging’
+ DEBUG [51e7837a] 	: Permission denied
+ DEBUG [51e7837a] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-03 17:17:03 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [df01bffc] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [df01bffc] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [df01bffc] Finished in 2.187 seconds with exit status 1 (failed).
+  WARN [0;31mSkipping pending changes check on 34.76.138.14 (no REVISION file found)[0m
+ DEBUG [14bf7e0f] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [14bf7e0f] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [14bf7e0f] Finished in 0.271 seconds with exit status 1 (failed).
+  INFO [4e378783] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [4e378783] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4e378783] Finished in 0.369 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [e8130ace] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [e8130ace] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [e8130ace] Finished in 0.548 seconds with exit status 0 (successful).
+  INFO [3ea90b60] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [3ea90b60] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [3ea90b60] 	6531b98dd014c883fbdf3ed26a93cd2474474b27	HEAD
+  INFO [3ea90b60] Finished in 3.526 seconds with exit status 0 (successful).
+  INFO [6c4bf5b5] Running /usr/bin/env mkdir -p /var/www/html/stage/shared /var/www/html/stage/releases as vagrant@34.76.138.14
+ DEBUG [6c4bf5b5] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared /var/www/html/stage/releases
+  INFO [6c4bf5b5] Finished in 0.342 seconds with exit status 0 (successful).
+  INFO [b4be8c7e] Running /usr/bin/env mkdir -p /var/www/html/stage/shared/pub/media /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/shared/var/backups /var/www/html/stage/shared/var/composer_home /var/www/html/stage/shared/var/importexport /var/www/html/stage/shared/var/import_history /var/www/html/stage/shared/var/export /var/www/html/stage/shared/var/log /var/www/html/stage/shared/var/session /var/www/html/stage/shared/var/tmp as vagrant@34.76.138.14
+ DEBUG [b4be8c7e] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared/pub/media /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/shared/var/backups /var/www/html/stage/shared/var/composer_home /var/www/html/stage/shared/var/importexport /var/www/html/stage/shared/var/import_history /var/www/html/stage/shared/var/export /var/www/html/stage/shared/var/log /var/www/html/stage/shared/var/session /var/www/html/stage/shared/var/tmp
+  INFO [b4be8c7e] Finished in 0.405 seconds with exit status 0 (successful).
+  INFO [9373417a] Running /usr/bin/env mkdir -p /var/www/html/stage/shared/app/etc /var/www/html/stage/shared/var as vagrant@34.76.138.14
+ DEBUG [9373417a] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared/app/etc /var/www/html/stage/shared/var
+  INFO [9373417a] Finished in 0.339 seconds with exit status 0 (successful).
+ DEBUG [3cde86a5] Running [ -f /var/www/html/stage/shared/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [3cde86a5] Command: [ -f /var/www/html/stage/shared/app/etc/env.php ]
+ DEBUG [3cde86a5] Finished in 0.385 seconds with exit status 0 (successful).
+ DEBUG [67cf5d1a] Running [ -f /var/www/html/stage/shared/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [67cf5d1a] Command: [ -f /var/www/html/stage/shared/app/etc/config.local.php ]
+ DEBUG [67cf5d1a] Finished in 0.395 seconds with exit status 1 (failed).
+  INFO [2600a8f5] Running /usr/bin/env touch /var/www/html/stage/shared/app/etc/config.local.php as vagrant@34.76.138.14
+ DEBUG [2600a8f5] Command: /usr/bin/env touch /var/www/html/stage/shared/app/etc/config.local.php
+  INFO [2600a8f5] Finished in 0.340 seconds with exit status 0 (successful).
+ DEBUG [99043564] Running [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [99043564] Command: [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ]
+ DEBUG [99043564] Finished in 0.377 seconds with exit status 1 (failed).
+  INFO [c74b68df] Running /usr/bin/env touch /var/www/html/stage/shared/var/.setup_cronjob_status as vagrant@34.76.138.14
+ DEBUG [c74b68df] Command: /usr/bin/env touch /var/www/html/stage/shared/var/.setup_cronjob_status
+  INFO [c74b68df] Finished in 0.401 seconds with exit status 0 (successful).
+ DEBUG [c25f3573] Running [ -f /var/www/html/stage/shared/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [c25f3573] Command: [ -f /var/www/html/stage/shared/var/.update_cronjob_status ]
+ DEBUG [c25f3573] Finished in 0.437 seconds with exit status 1 (failed).
+  INFO [26844bcc] Running /usr/bin/env touch /var/www/html/stage/shared/var/.update_cronjob_status as vagrant@34.76.138.14
+ DEBUG [26844bcc] Command: /usr/bin/env touch /var/www/html/stage/shared/var/.update_cronjob_status
+  INFO [26844bcc] Finished in 0.271 seconds with exit status 0 (successful).
+ DEBUG [19fe0f77] Running [ -f /var/www/html/stage/shared/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [19fe0f77] Command: [ -f /var/www/html/stage/shared/app/etc/env.php ]
+ DEBUG [19fe0f77] Finished in 0.360 seconds with exit status 0 (successful).
+ DEBUG [b86a55ee] Running [ -f /var/www/html/stage/shared/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [b86a55ee] Command: [ -f /var/www/html/stage/shared/app/etc/config.local.php ]
+ DEBUG [b86a55ee] Finished in 0.367 seconds with exit status 0 (successful).
+ DEBUG [ddea062e] Running [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [ddea062e] Command: [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ]
+ DEBUG [ddea062e] Finished in 0.274 seconds with exit status 0 (successful).
+ DEBUG [d11a8dd5] Running [ -f /var/www/html/stage/shared/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [d11a8dd5] Command: [ -f /var/www/html/stage/shared/var/.update_cronjob_status ]
+ DEBUG [d11a8dd5] Finished in 0.377 seconds with exit status 0 (successful).
+ DEBUG [73812e32] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [73812e32] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [73812e32] Finished in 0.279 seconds with exit status 1 (failed).
+ DEBUG [87738076] Running [ -f /var/www/html/stage/repo/HEAD ] as vagrant@34.76.138.14
+ DEBUG [87738076] Command: [ -f /var/www/html/stage/repo/HEAD ]
+ DEBUG [87738076] Finished in 0.389 seconds with exit status 1 (failed).
+ DEBUG [8a0ea9e7] Running if test ! -d /var/www/html/stage; then echo "Directory does not exist '/var/www/html/stage'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [8a0ea9e7] Command: if test ! -d /var/www/html/stage; then echo "Directory does not exist '/var/www/html/stage'" 1>&2; false; fi
+ DEBUG [8a0ea9e7] Finished in 0.406 seconds with exit status 0 (successful).
+  INFO [67438c11] Running /usr/bin/env git clone --mirror git@github.com:rizwanwakil2018/magento2store.git /var/www/html/stage/repo as vagrant@34.76.138.14
+ DEBUG [67438c11] Command: cd /var/www/html/stage && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git clone --mirror git@github.com:rizwanwakil2018/magento2store.git /var/www/html/stage/repo )
+ DEBUG [67438c11] 	Cloning into bare repository '/var/www/html/stage/repo'...
+  INFO [67438c11] Finished in 9.363 seconds with exit status 0 (successful).
+ DEBUG [012bcf5d] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [012bcf5d] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [012bcf5d] Finished in 0.291 seconds with exit status 0 (successful).
+  INFO [b021c5e6] Running /usr/bin/env git remote set-url origin git@github.com:rizwanwakil2018/magento2store.git as vagrant@34.76.138.14
+ DEBUG [b021c5e6] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git remote set-url origin git@github.com:rizwanwakil2018/magento2store.git )
+  INFO [b021c5e6] Finished in 0.369 seconds with exit status 0 (successful).
+  INFO [ac25743d] Running /usr/bin/env git remote update --prune as vagrant@34.76.138.14
+ DEBUG [ac25743d] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ac25743d] 	Fetching origin
+  INFO [ac25743d] Finished in 1.633 seconds with exit status 0 (successful).
+ DEBUG [c9b0135b] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [c9b0135b] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [c9b0135b] Finished in 0.339 seconds with exit status 0 (successful).
+  INFO [845b17a3] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703171716 as vagrant@34.76.138.14
+ DEBUG [845b17a3] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703171716 )
+  INFO [845b17a3] Finished in 0.272 seconds with exit status 0 (successful).
+  INFO [fc6ad1d6] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/stage/releases/20190703171716 as vagrant@34.76.138.14
+ DEBUG [fc6ad1d6] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/stage/releases/20190703171716 )
+  INFO [fc6ad1d6] Finished in 8.774 seconds with exit status 0 (successful).
+ DEBUG [f5a4ab95] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [f5a4ab95] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [f5a4ab95] Finished in 0.440 seconds with exit status 0 (successful).
+ DEBUG [b8e8caa6] Running /usr/bin/env git rev-list --max-count=1 master as vagrant@34.76.138.14
+ DEBUG [b8e8caa6] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b8e8caa6] 	6531b98dd014c883fbdf3ed26a93cd2474474b27
+ DEBUG [b8e8caa6] Finished in 0.358 seconds with exit status 0 (successful).
+ DEBUG [14ef09b9] Running if test ! -d /var/www/html/stage/releases/20190703171716; then echo "Directory does not exist '/var/www/html/stage/releases/20190703171716'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [14ef09b9] Command: if test ! -d /var/www/html/stage/releases/20190703171716; then echo "Directory does not exist '/var/www/html/stage/releases/20190703171716'" 1>&2; false; fi
+ DEBUG [14ef09b9] Finished in 0.354 seconds with exit status 0 (successful).
+  INFO [3ce96d7a] Running /usr/bin/env echo "6531b98dd014c883fbdf3ed26a93cd2474474b27" > REVISION as vagrant@34.76.138.14
+ DEBUG [3ce96d7a] Command: cd /var/www/html/stage/releases/20190703171716 && /usr/bin/env echo "6531b98dd014c883fbdf3ed26a93cd2474474b27" > REVISION
+  INFO [3ce96d7a] Finished in 0.411 seconds with exit status 0 (successful).
+ DEBUG [2444c899] Running [ -f /var/www/html/stage/releases/20190703171716/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [2444c899] Command: [ -f /var/www/html/stage/releases/20190703171716/app/etc/config.local.php ]
+ DEBUG [2444c899] Finished in 0.425 seconds with exit status 1 (failed).
+ DEBUG [96755bcf] Running /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/releases/20190703171716/app/etc/config.php";; exit((int)(isset($cfg["scopes"]) && isset($cfg["themes"])));; ' as vagrant@34.76.138.14
+ DEBUG [96755bcf] Command: /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/releases/20190703171716/app/etc/config.php";; exit((int)(isset($cfg["scopes"]) && isset($cfg["themes"])));; '
+ DEBUG [96755bcf] 	PHP Warning:  include(/var/www/html/stage/releases/20190703171716/app/etc/config.php): failed to open stream: No such file or directory in Command line code on line 1
+ DEBUG [96755bcf] 	PHP Stack trace:
+ DEBUG [96755bcf] 	PHP   1. {main}() Command line code:0
+ DEBUG [96755bcf] 	PHP Warning:  include(): Failed opening '/var/www/html/stage/releases/20190703171716/app/etc/config.php' for inclusion (include_path='.:/usr/share/php') in Command line code on line 1
+ DEBUG [96755bcf] 	PHP Stack trace:
+ DEBUG [96755bcf] 	PHP   1. {main}() Command line code:0
+ DEBUG [96755bcf] Finished in 0.398 seconds with exit status 0 (successful).
+  INFO [2f2528bd] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703171716/app/etc /var/www/html/stage/releases/20190703171716/var as vagrant@34.76.138.14
+ DEBUG [2f2528bd] Command: /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703171716/app/etc /var/www/html/stage/releases/20190703171716/var
+  INFO [2f2528bd] Finished in 0.335 seconds with exit status 0 (successful).
+ DEBUG [d1463f1d] Running [ -L /var/www/html/stage/releases/20190703171716/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [d1463f1d] Command: [ -L /var/www/html/stage/releases/20190703171716/app/etc/env.php ]
+ DEBUG [d1463f1d] Finished in 0.363 seconds with exit status 1 (failed).
+ DEBUG [8eabcb3e] Running [ -f /var/www/html/stage/releases/20190703171716/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [8eabcb3e] Command: [ -f /var/www/html/stage/releases/20190703171716/app/etc/env.php ]
+ DEBUG [8eabcb3e] Finished in 0.307 seconds with exit status 1 (failed).
+  INFO [8e16625e] Running /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190703171716/app/etc/env.php as vagrant@34.76.138.14
+ DEBUG [8e16625e] Command: /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190703171716/app/etc/env.php
+  INFO [8e16625e] Finished in 0.406 seconds with exit status 0 (successful).
+ DEBUG [118cda43] Running [ -L /var/www/html/stage/releases/20190703171716/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [118cda43] Command: [ -L /var/www/html/stage/releases/20190703171716/app/etc/config.local.php ]
+ DEBUG [118cda43] Finished in 0.409 seconds with exit status 1 (failed).
+ DEBUG [5a5505a2] Running [ -f /var/www/html/stage/releases/20190703171716/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [5a5505a2] Command: [ -f /var/www/html/stage/releases/20190703171716/app/etc/config.local.php ]
+ DEBUG [5a5505a2] Finished in 0.338 seconds with exit status 1 (failed).
+  INFO [d7ba0d01] Running /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/config.local.php /var/www/html/stage/releases/20190703171716/app/etc/config.local.php as vagrant@34.76.138.14
+ DEBUG [d7ba0d01] Command: /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/config.local.php /var/www/html/stage/releases/20190703171716/app/etc/config.local.php
+  INFO [d7ba0d01] Finished in 0.375 seconds with exit status 0 (successful).
+ DEBUG [833c2d68] Running [ -L /var/www/html/stage/releases/20190703171716/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [833c2d68] Command: [ -L /var/www/html/stage/releases/20190703171716/var/.setup_cronjob_status ]
+ DEBUG [833c2d68] Finished in 0.405 seconds with exit status 1 (failed).
+ DEBUG [7ada3b82] Running [ -f /var/www/html/stage/releases/20190703171716/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [7ada3b82] Command: [ -f /var/www/html/stage/releases/20190703171716/var/.setup_cronjob_status ]
+ DEBUG [7ada3b82] Finished in 0.307 seconds with exit status 1 (failed).
+  INFO [a4d1f10c] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/.setup_cronjob_status /var/www/html/stage/releases/20190703171716/var/.setup_cronjob_status as vagrant@34.76.138.14
+ DEBUG [a4d1f10c] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/.setup_cronjob_status /var/www/html/stage/releases/20190703171716/var/.setup_cronjob_status
+  INFO [a4d1f10c] Finished in 0.270 seconds with exit status 0 (successful).
+ DEBUG [88243809] Running [ -L /var/www/html/stage/releases/20190703171716/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [88243809] Command: [ -L /var/www/html/stage/releases/20190703171716/var/.update_cronjob_status ]
+ DEBUG [88243809] Finished in 0.440 seconds with exit status 1 (failed).
+ DEBUG [fde1f5b0] Running [ -f /var/www/html/stage/releases/20190703171716/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [fde1f5b0] Command: [ -f /var/www/html/stage/releases/20190703171716/var/.update_cronjob_status ]
+ DEBUG [fde1f5b0] Finished in 0.416 seconds with exit status 1 (failed).
+  INFO [386f59b3] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/.update_cronjob_status /var/www/html/stage/releases/20190703171716/var/.update_cronjob_status as vagrant@34.76.138.14
+ DEBUG [386f59b3] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/.update_cronjob_status /var/www/html/stage/releases/20190703171716/var/.update_cronjob_status
+  INFO [386f59b3] Finished in 0.302 seconds with exit status 0 (successful).
+  INFO [ffc673eb] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703171716/pub /var/www/html/stage/releases/20190703171716/var as vagrant@34.76.138.14
+ DEBUG [ffc673eb] Command: /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703171716/pub /var/www/html/stage/releases/20190703171716/var
+  INFO [ffc673eb] Finished in 0.503 seconds with exit status 0 (successful).
+ DEBUG [ceb5cf63] Running [ -L /var/www/html/stage/releases/20190703171716/pub/media ] as vagrant@34.76.138.14
+ DEBUG [ceb5cf63] Command: [ -L /var/www/html/stage/releases/20190703171716/pub/media ]
+ DEBUG [ceb5cf63] Finished in 0.487 seconds with exit status 1 (failed).
+ DEBUG [e0497338] Running [ -d /var/www/html/stage/releases/20190703171716/pub/media ] as vagrant@34.76.138.14
+ DEBUG [e0497338] Command: [ -d /var/www/html/stage/releases/20190703171716/pub/media ]
+ DEBUG [e0497338] Finished in 0.296 seconds with exit status 0 (successful).
+  INFO [dc23c038] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190703171716/pub/media as vagrant@34.76.138.14
+ DEBUG [dc23c038] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190703171716/pub/media
+  INFO [dc23c038] Finished in 0.523 seconds with exit status 0 (successful).
+  INFO [1e2ee4b4] Running /usr/bin/env ln -s /var/www/html/stage/shared/pub/media /var/www/html/stage/releases/20190703171716/pub/media as vagrant@34.76.138.14
+ DEBUG [1e2ee4b4] Command: /usr/bin/env ln -s /var/www/html/stage/shared/pub/media /var/www/html/stage/releases/20190703171716/pub/media
+  INFO [1e2ee4b4] Finished in 0.422 seconds with exit status 0 (successful).
+ DEBUG [671a1574] Running [ -L /var/www/html/stage/releases/20190703171716/pub/sitemaps ] as vagrant@34.76.138.14
+ DEBUG [671a1574] Command: [ -L /var/www/html/stage/releases/20190703171716/pub/sitemaps ]
+ DEBUG [671a1574] Finished in 0.304 seconds with exit status 1 (failed).
+ DEBUG [098bf088] Running [ -d /var/www/html/stage/releases/20190703171716/pub/sitemaps ] as vagrant@34.76.138.14
+ DEBUG [098bf088] Command: [ -d /var/www/html/stage/releases/20190703171716/pub/sitemaps ]
+ DEBUG [098bf088] Finished in 0.271 seconds with exit status 1 (failed).
+  INFO [abe11f2b] Running /usr/bin/env ln -s /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/releases/20190703171716/pub/sitemaps as vagrant@34.76.138.14
+ DEBUG [abe11f2b] Command: /usr/bin/env ln -s /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/releases/20190703171716/pub/sitemaps
+  INFO [abe11f2b] Finished in 0.309 seconds with exit status 0 (successful).
+ DEBUG [1464d576] Running [ -L /var/www/html/stage/releases/20190703171716/var/backups ] as vagrant@34.76.138.14
+ DEBUG [1464d576] Command: [ -L /var/www/html/stage/releases/20190703171716/var/backups ]
+ DEBUG [1464d576] Finished in 0.444 seconds with exit status 1 (failed).
+ DEBUG [e61e5726] Running [ -d /var/www/html/stage/releases/20190703171716/var/backups ] as vagrant@34.76.138.14
+ DEBUG [e61e5726] Command: [ -d /var/www/html/stage/releases/20190703171716/var/backups ]
+ DEBUG [e61e5726] Finished in 0.401 seconds with exit status 1 (failed).
+  INFO [e7167ee2] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/backups /var/www/html/stage/releases/20190703171716/var/backups as vagrant@34.76.138.14
+ DEBUG [e7167ee2] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/backups /var/www/html/stage/releases/20190703171716/var/backups
+  INFO [e7167ee2] Finished in 0.269 seconds with exit status 0 (successful).
+ DEBUG [5e6b5719] Running [ -L /var/www/html/stage/releases/20190703171716/var/composer_home ] as vagrant@34.76.138.14
+ DEBUG [5e6b5719] Command: [ -L /var/www/html/stage/releases/20190703171716/var/composer_home ]
+ DEBUG [5e6b5719] Finished in 0.442 seconds with exit status 1 (failed).
+ DEBUG [4b278d40] Running [ -d /var/www/html/stage/releases/20190703171716/var/composer_home ] as vagrant@34.76.138.14
+ DEBUG [4b278d40] Command: [ -d /var/www/html/stage/releases/20190703171716/var/composer_home ]
+ DEBUG [4b278d40] Finished in 0.409 seconds with exit status 1 (failed).
+  INFO [609fd933] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/composer_home /var/www/html/stage/releases/20190703171716/var/composer_home as vagrant@34.76.138.14
+ DEBUG [609fd933] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/composer_home /var/www/html/stage/releases/20190703171716/var/composer_home
+  INFO [609fd933] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [60f1050b] Running [ -L /var/www/html/stage/releases/20190703171716/var/importexport ] as vagrant@34.76.138.14
+ DEBUG [60f1050b] Command: [ -L /var/www/html/stage/releases/20190703171716/var/importexport ]
+ DEBUG [60f1050b] Finished in 0.447 seconds with exit status 1 (failed).
+ DEBUG [02461510] Running [ -d /var/www/html/stage/releases/20190703171716/var/importexport ] as vagrant@34.76.138.14
+ DEBUG [02461510] Command: [ -d /var/www/html/stage/releases/20190703171716/var/importexport ]
+ DEBUG [02461510] Finished in 0.406 seconds with exit status 1 (failed).
+  INFO [4bfa1c6f] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/importexport /var/www/html/stage/releases/20190703171716/var/importexport as vagrant@34.76.138.14
+ DEBUG [4bfa1c6f] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/importexport /var/www/html/stage/releases/20190703171716/var/importexport
+  INFO [4bfa1c6f] Finished in 0.270 seconds with exit status 0 (successful).
+ DEBUG [086fb63e] Running [ -L /var/www/html/stage/releases/20190703171716/var/import_history ] as vagrant@34.76.138.14
+ DEBUG [086fb63e] Command: [ -L /var/www/html/stage/releases/20190703171716/var/import_history ]
+ DEBUG [086fb63e] Finished in 0.345 seconds with exit status 1 (failed).
+ DEBUG [7cb4673b] Running [ -d /var/www/html/stage/releases/20190703171716/var/import_history ] as vagrant@34.76.138.14
+ DEBUG [7cb4673b] Command: [ -d /var/www/html/stage/releases/20190703171716/var/import_history ]
+ DEBUG [7cb4673b] Finished in 0.281 seconds with exit status 1 (failed).
+  INFO [26297704] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/import_history /var/www/html/stage/releases/20190703171716/var/import_history as vagrant@34.76.138.14
+ DEBUG [26297704] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/import_history /var/www/html/stage/releases/20190703171716/var/import_history
+  INFO [26297704] Finished in 0.349 seconds with exit status 0 (successful).
+ DEBUG [e3d96140] Running [ -L /var/www/html/stage/releases/20190703171716/var/export ] as vagrant@34.76.138.14
+ DEBUG [e3d96140] Command: [ -L /var/www/html/stage/releases/20190703171716/var/export ]
+ DEBUG [e3d96140] Finished in 0.268 seconds with exit status 1 (failed).
+ DEBUG [77e28a54] Running [ -d /var/www/html/stage/releases/20190703171716/var/export ] as vagrant@34.76.138.14
+ DEBUG [77e28a54] Command: [ -d /var/www/html/stage/releases/20190703171716/var/export ]
+ DEBUG [77e28a54] Finished in 0.420 seconds with exit status 1 (failed).
+  INFO [b6b389b6] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/export /var/www/html/stage/releases/20190703171716/var/export as vagrant@34.76.138.14
+ DEBUG [b6b389b6] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/export /var/www/html/stage/releases/20190703171716/var/export
+  INFO [b6b389b6] Finished in 0.269 seconds with exit status 0 (successful).
+ DEBUG [5024b39b] Running [ -L /var/www/html/stage/releases/20190703171716/var/log ] as vagrant@34.76.138.14
+ DEBUG [5024b39b] Command: [ -L /var/www/html/stage/releases/20190703171716/var/log ]
+ DEBUG [5024b39b] Finished in 0.442 seconds with exit status 1 (failed).
+ DEBUG [e53ac7ad] Running [ -d /var/www/html/stage/releases/20190703171716/var/log ] as vagrant@34.76.138.14
+ DEBUG [e53ac7ad] Command: [ -d /var/www/html/stage/releases/20190703171716/var/log ]
+ DEBUG [e53ac7ad] Finished in 0.408 seconds with exit status 1 (failed).
+  INFO [ccf88830] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/log /var/www/html/stage/releases/20190703171716/var/log as vagrant@34.76.138.14
+ DEBUG [ccf88830] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/log /var/www/html/stage/releases/20190703171716/var/log
+  INFO [ccf88830] Finished in 0.269 seconds with exit status 0 (successful).
+ DEBUG [62991c72] Running [ -L /var/www/html/stage/releases/20190703171716/var/session ] as vagrant@34.76.138.14
+ DEBUG [62991c72] Command: [ -L /var/www/html/stage/releases/20190703171716/var/session ]
+ DEBUG [62991c72] Finished in 0.344 seconds with exit status 1 (failed).
+ DEBUG [eabaf1d4] Running [ -d /var/www/html/stage/releases/20190703171716/var/session ] as vagrant@34.76.138.14
+ DEBUG [eabaf1d4] Command: [ -d /var/www/html/stage/releases/20190703171716/var/session ]
+ DEBUG [eabaf1d4] Finished in 0.405 seconds with exit status 1 (failed).
+  INFO [db8820e7] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/session /var/www/html/stage/releases/20190703171716/var/session as vagrant@34.76.138.14
+ DEBUG [db8820e7] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/session /var/www/html/stage/releases/20190703171716/var/session
+  INFO [db8820e7] Finished in 0.338 seconds with exit status 0 (successful).
+ DEBUG [3f92221b] Running [ -L /var/www/html/stage/releases/20190703171716/var/tmp ] as vagrant@34.76.138.14
+ DEBUG [3f92221b] Command: [ -L /var/www/html/stage/releases/20190703171716/var/tmp ]
+ DEBUG [3f92221b] Finished in 0.276 seconds with exit status 1 (failed).
+ DEBUG [9f69138f] Running [ -d /var/www/html/stage/releases/20190703171716/var/tmp ] as vagrant@34.76.138.14
+ DEBUG [9f69138f] Command: [ -d /var/www/html/stage/releases/20190703171716/var/tmp ]
+ DEBUG [9f69138f] Finished in 0.301 seconds with exit status 1 (failed).
+  INFO [5b8c5194] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/tmp /var/www/html/stage/releases/20190703171716/var/tmp as vagrant@34.76.138.14
+ DEBUG [5b8c5194] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/tmp /var/www/html/stage/releases/20190703171716/var/tmp
+  INFO [5b8c5194] Finished in 0.306 seconds with exit status 0 (successful).
+ DEBUG [a0880550] Running [ -f /var/www/html/stage/releases/20190703171716/app/etc/config.php ] as vagrant@34.76.138.14
+ DEBUG [a0880550] Command: [ -f /var/www/html/stage/releases/20190703171716/app/etc/config.php ]
+ DEBUG [a0880550] Finished in 0.336 seconds with exit status 1 (failed).
+ ERROR [0;31mThe repository is missing app/etc/config.php. Please install the application and retry![0m
