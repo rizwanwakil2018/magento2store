@@ -584,3 +584,7 @@
 [2019-07-03 18:41:42] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/admin/admin/system_config/save/key/7be69e30306c29fcff495ce8916218312b671752a41687ed1113dd91a684f444/section/general/","invalidateInfo":{"tags":["config_scopes","CONFIG"],"mode":"matchingTag"}} []
 [2019-07-03 18:41:42] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/admin/admin/system_config/save/key/7be69e30306c29fcff495ce8916218312b671752a41687ed1113dd91a684f444/section/general/","invalidateInfo":{"identifier":"SYSTEM_CONFIG"}} []
 [2019-07-03 18:41:43] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/admin/admin/system_config/save/key/7be69e30306c29fcff495ce8916218312b671752a41687ed1113dd91a684f444/section/general/","invalidateInfo":{"identifier":"SYSTEM_CONFIG"}} []
+[2019-07-03 19:11:50] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":[],"mode":"all"}} []
+[2019-07-03 19:11:50] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":[],"mode":"all"}} []
+[2019-07-03 19:11:50] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"identifier":"interception"}} []
+[2019-07-03 19:00:12] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/setup/index.php/session/prolong","invalidateInfo":{"identifier":"SYSTEM_CONFIG"}} []
