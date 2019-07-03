@@ -437,3 +437,6 @@
 [2019-07-03 11:34:00] main.INFO: Add of item with id Temando_Shipping::batches was processed [] []
 [2019-07-03 11:34:01] main.DEBUG: Request validation failed for action "Magento\Backend\Controller\Adminhtml\Index\Index\Interceptor" [] []
 [2019-07-03 12:41:13] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/admin/admin/index/index/key/c8f381595515e8a6d121d1045c3e846514af5ea0347e5b73b4d1473e592f6611/","invalidateInfo":{"tags":["BACKEND_MAINMENU"],"mode":"matchingAnyTag"}} []
+[2019-07-03 18:07:04] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/setup/index.php/session/prolong","invalidateInfo":{"identifier":"interception"}} []
+[2019-07-03 18:07:05] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/setup/index.php/session/prolong","invalidateInfo":{"identifier":"interception"}} []
+[2019-07-03 18:07:19] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/setup/index.php/session/prolong","invalidateInfo":{"identifier":"SYSTEM_CONFIG"}} []
