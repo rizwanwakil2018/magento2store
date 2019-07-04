@@ -14540,3 +14540,1290 @@ vertex
   INFO [a1a64587] Running /usr/bin/env echo "Branch master (at 0c93075c1b760d96ed9219f8d2521cb91925dd33) deployed as release 20190703212617 by vagrant" >> /var/www/html/production/revisions.log as vagrant@34.76.138.14
  DEBUG [a1a64587] Command: cd /var/www/html/production/releases && /usr/bin/env echo "Branch master (at 0c93075c1b760d96ed9219f8d2521cb91925dd33) deployed as release 20190703212617 by vagrant" >> /var/www/html/production/revisions.log
   INFO [a1a64587] Finished in 0.415 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-03 22:28:16 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [72fd2bc9] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [72fd2bc9] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [72fd2bc9] Finished in 1.724 seconds with exit status 0 (successful).
+  INFO [45e78ef1] Running /usr/bin/env git fetch origin as vagrant@localhost
+ DEBUG [45e78ef1] Command: /usr/bin/env git fetch origin
+  INFO [45e78ef1] Finished in 1.883 seconds with exit status 0 (successful).
+ DEBUG [98ede1ad] Running if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [98ede1ad] Command: if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi
+ DEBUG [98ede1ad] Finished in 0.266 seconds with exit status 0 (successful).
+ DEBUG [f3c53fb5] Running /usr/bin/env cat REVISION as vagrant@34.76.138.14
+ DEBUG [f3c53fb5] Command: cd /var/www/html/stage/current && /usr/bin/env cat REVISION
+ DEBUG [f3c53fb5] 	0c93075c1b760d96ed9219f8d2521cb91925dd33
+ DEBUG [f3c53fb5] Finished in 0.287 seconds with exit status 0 (successful).
+ DEBUG [d2bc652a] Running /usr/bin/env git name-rev --always --name-only 0c93075c1b760d96ed9219f8d2521cb91925dd33 as vagrant@localhost
+ DEBUG [d2bc652a] Command: /usr/bin/env git name-rev --always --name-only 0c93075c1b760d96ed9219f8d2521cb91925dd33
+ DEBUG [d2bc652a] 	master
+ DEBUG [d2bc652a] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [ad2568e3] Running /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u} as vagrant@localhost
+ DEBUG [ad2568e3] Command: /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u}
+ DEBUG [ad2568e3] 	fatal: no upstream configured for branch 'stage'
+ DEBUG [ad2568e3] Finished in 0.009 seconds with exit status 32768 (failed).
+ DEBUG [d221ede9] Running /usr/bin/env git name-rev --always --name-only stage as vagrant@localhost
+ DEBUG [d221ede9] Command: /usr/bin/env git name-rev --always --name-only stage
+ DEBUG [d221ede9] 	stage
+ DEBUG [d221ede9] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [b02968fa] Running /usr/bin/env git log master..stage --pretty="format:%C(yellow)%h %Cblue%>(12)%ai %Cgreen%<(7)%aN%Cred%d %Creset%s" as vagrant@localhost
+ DEBUG [b02968fa] Command: /usr/bin/env git log master..stage --pretty="format:%C(yellow)%h %Cblue%>(12)%ai %Cgreen%<(7)%aN%Cred%d %Creset%s"
+ DEBUG [b02968fa] 	[33mb207bbd [34m2019-07-04 13:29:22 +0400 [32mRizwan Khan[31m (HEAD -> stage, origin/stage) [mfix issue in deploy.rb file
+ DEBUG [b02968fa] 	[33mfb50734 [34m2019-07-04 13:27:23 +0400 [32mRizwan Khan[31m [mmodified deploy.rb file and remove en_GB Option taking time in deployment
+ DEBUG [b02968fa] 	[33m1e8973c [34m2019-07-04 13:24:53 +0400 [32mRizwan Khan[31m [madd some additional freego theme files
+ DEBUG [b02968fa] 	[33m5abb8f6 [34m2019-07-04 13:03:23 +0400 [32mRizwan Khan[31m [madd freego theme in stage branch
+ DEBUG [b02968fa] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [0;90mChanges pending deployment on 34.76.138.14 (master -> stage):[0m
+  INFO [33mb207bbd [34m2019-07-04 13:29:22 +0400 [32mRizwan Khan[31m (HEAD -> stage, origin/stage) [mfix issue in deploy.rb file
+  INFO [33mfb50734 [34m2019-07-04 13:27:23 +0400 [32mRizwan Khan[31m [mmodified deploy.rb file and remove en_GB Option taking time in deployment
+  INFO [33m1e8973c [34m2019-07-04 13:24:53 +0400 [32mRizwan Khan[31m [madd some additional freego theme files
+  INFO [33m5abb8f6 [34m2019-07-04 13:03:23 +0400 [32mRizwan Khan[31m [madd freego theme in stage branch
+ DEBUG [c61a1d69] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [c61a1d69] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [c61a1d69] Finished in 0.343 seconds with exit status 0 (successful).
+ DEBUG [33265b37] Running if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [33265b37] Command: if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi
+ DEBUG [33265b37] Finished in 0.266 seconds with exit status 0 (successful).
+ DEBUG [c94dbb89] Running /usr/bin/env cat REVISION as vagrant@34.76.138.14
+ DEBUG [c94dbb89] Command: cd /var/www/html/stage/current && /usr/bin/env cat REVISION
+ DEBUG [c94dbb89] 	0c93075c1b760d96ed9219f8d2521cb91925dd33
+ DEBUG [c94dbb89] Finished in 0.268 seconds with exit status 0 (successful).
+ DEBUG [cb840914] Running /usr/bin/env git name-rev --always --name-only 0c93075c1b760d96ed9219f8d2521cb91925dd33 as vagrant@localhost
+ DEBUG [cb840914] Command: /usr/bin/env git name-rev --always --name-only 0c93075c1b760d96ed9219f8d2521cb91925dd33
+ DEBUG [cb840914] 	master
+ DEBUG [cb840914] Finished in 0.040 seconds with exit status 0 (successful).
+ DEBUG [fca5cacb] Running /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u} as vagrant@localhost
+ DEBUG [fca5cacb] Command: /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u}
+ DEBUG [fca5cacb] 	fatal: no upstream configured for branch 'stage'
+ DEBUG [fca5cacb] Finished in 0.010 seconds with exit status 32768 (failed).
+ DEBUG [19cd5523] Running /usr/bin/env git name-rev --always --name-only stage as vagrant@localhost
+ DEBUG [19cd5523] Command: /usr/bin/env git name-rev --always --name-only stage
+ DEBUG [19cd5523] 	stage
+ DEBUG [19cd5523] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [1f46ca67] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [1f46ca67] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1f46ca67] Finished in 0.319 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [3a06a318] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [3a06a318] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [3a06a318] Finished in 0.437 seconds with exit status 0 (successful).
+  INFO [d348a8c7] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [d348a8c7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [d348a8c7] 	0c93075c1b760d96ed9219f8d2521cb91925dd33	HEAD
+  INFO [d348a8c7] Finished in 1.567 seconds with exit status 0 (successful).
+  INFO [8ecb13dd] Running /usr/bin/env mkdir -p /var/www/html/stage/shared /var/www/html/stage/releases as vagrant@34.76.138.14
+ DEBUG [8ecb13dd] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared /var/www/html/stage/releases
+  INFO [8ecb13dd] Finished in 0.267 seconds with exit status 0 (successful).
+  INFO [4ad2782f] Running /usr/bin/env mkdir -p /var/www/html/stage/shared/pub/media /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/shared/var/backups /var/www/html/stage/shared/var/composer_home /var/www/html/stage/shared/var/importexport /var/www/html/stage/shared/var/import_history /var/www/html/stage/shared/var/log /var/www/html/stage/shared/var/session /var/www/html/stage/shared/var/tmp as vagrant@34.76.138.14
+ DEBUG [4ad2782f] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared/pub/media /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/shared/var/backups /var/www/html/stage/shared/var/composer_home /var/www/html/stage/shared/var/importexport /var/www/html/stage/shared/var/import_history /var/www/html/stage/shared/var/log /var/www/html/stage/shared/var/session /var/www/html/stage/shared/var/tmp
+  INFO [4ad2782f] Finished in 0.274 seconds with exit status 0 (successful).
+  INFO [0b7f19d7] Running /usr/bin/env mkdir -p /var/www/html/stage/shared/app/etc /var/www/html/stage/shared/var as vagrant@34.76.138.14
+ DEBUG [0b7f19d7] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared/app/etc /var/www/html/stage/shared/var
+  INFO [0b7f19d7] Finished in 0.270 seconds with exit status 0 (successful).
+ DEBUG [afd91e5f] Running [ -f /var/www/html/stage/shared/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [afd91e5f] Command: [ -f /var/www/html/stage/shared/app/etc/env.php ]
+ DEBUG [afd91e5f] Finished in 0.423 seconds with exit status 0 (successful).
+ DEBUG [fb8d1fc1] Running [ -f /var/www/html/stage/shared/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [fb8d1fc1] Command: [ -f /var/www/html/stage/shared/app/etc/config.local.php ]
+ DEBUG [fb8d1fc1] Finished in 0.341 seconds with exit status 0 (successful).
+ DEBUG [ecdfc5be] Running [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [ecdfc5be] Command: [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ]
+ DEBUG [ecdfc5be] Finished in 0.266 seconds with exit status 0 (successful).
+ DEBUG [debdb9f6] Running [ -f /var/www/html/stage/shared/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [debdb9f6] Command: [ -f /var/www/html/stage/shared/var/.update_cronjob_status ]
+ DEBUG [debdb9f6] Finished in 0.359 seconds with exit status 0 (successful).
+ DEBUG [7742faa6] Running [ -f /var/www/html/stage/shared/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [7742faa6] Command: [ -f /var/www/html/stage/shared/app/etc/env.php ]
+ DEBUG [7742faa6] Finished in 0.280 seconds with exit status 0 (successful).
+ DEBUG [1455b47a] Running [ -f /var/www/html/stage/shared/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [1455b47a] Command: [ -f /var/www/html/stage/shared/app/etc/config.local.php ]
+ DEBUG [1455b47a] Finished in 0.266 seconds with exit status 0 (successful).
+ DEBUG [61ac60a3] Running [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [61ac60a3] Command: [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ]
+ DEBUG [61ac60a3] Finished in 0.283 seconds with exit status 0 (successful).
+ DEBUG [63140a16] Running [ -f /var/www/html/stage/shared/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [63140a16] Command: [ -f /var/www/html/stage/shared/var/.update_cronjob_status ]
+ DEBUG [63140a16] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [4eee170f] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [4eee170f] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [4eee170f] Finished in 0.386 seconds with exit status 0 (successful).
+ DEBUG [0b6f6148] Running /usr/bin/env cat /var/www/html/stage/current/REVISION 2>/dev/null as vagrant@34.76.138.14
+ DEBUG [0b6f6148] Command: /usr/bin/env cat /var/www/html/stage/current/REVISION 2>/dev/null
+ DEBUG [0b6f6148] 	0c93075c1b760d96ed9219f8d2521cb91925dd33
+ DEBUG [0b6f6148] Finished in 0.416 seconds with exit status 0 (successful).
+ DEBUG [6cded8e4] Running [ -f /var/www/html/stage/repo/HEAD ] as vagrant@34.76.138.14
+ DEBUG [6cded8e4] Command: [ -f /var/www/html/stage/repo/HEAD ]
+ DEBUG [6cded8e4] Finished in 0.311 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/stage/repo
+ DEBUG [93bc8bcd] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [93bc8bcd] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [93bc8bcd] Finished in 0.309 seconds with exit status 0 (successful).
+  INFO [db1152f3] Running /usr/bin/env git remote set-url origin git@github.com:rizwanwakil2018/magento2store.git as vagrant@34.76.138.14
+ DEBUG [db1152f3] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git remote set-url origin git@github.com:rizwanwakil2018/magento2store.git )
+  INFO [db1152f3] Finished in 0.415 seconds with exit status 0 (successful).
+  INFO [0994fc71] Running /usr/bin/env git remote update --prune as vagrant@34.76.138.14
+ DEBUG [0994fc71] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0994fc71] 	Fetching origin
+ DEBUG [0994fc71] 	From github.com:rizwanwakil2018/magento2store
+ * [new branch]      stage      -> stage
+  INFO [0994fc71] Finished in 5.224 seconds with exit status 0 (successful).
+ DEBUG [5a758f59] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [5a758f59] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [5a758f59] Finished in 0.266 seconds with exit status 0 (successful).
+  INFO [2cdf5e02] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703222828 as vagrant@34.76.138.14
+ DEBUG [2cdf5e02] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703222828 )
+  INFO [2cdf5e02] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [d92f584d] Running /usr/bin/env git archive stage | /usr/bin/env tar -x -f - -C /var/www/html/stage/releases/20190703222828 as vagrant@34.76.138.14
+ DEBUG [d92f584d] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git archive stage | /usr/bin/env tar -x -f - -C /var/www/html/stage/releases/20190703222828 )
+  INFO [d92f584d] Finished in 16.208 seconds with exit status 0 (successful).
+ DEBUG [325f441b] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [325f441b] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [325f441b] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [2ac9ee80] Running /usr/bin/env git rev-list --max-count=1 stage as vagrant@34.76.138.14
+ DEBUG [2ac9ee80] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git rev-list --max-count=1 stage )
+ DEBUG [2ac9ee80] 	b207bbd3c3d0e5223b9249cc17959243b10f8d67
+ DEBUG [2ac9ee80] Finished in 0.276 seconds with exit status 0 (successful).
+ DEBUG [db7bcf04] Running if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [db7bcf04] Command: if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi
+ DEBUG [db7bcf04] Finished in 0.388 seconds with exit status 0 (successful).
+  INFO [5b139a50] Running /usr/bin/env echo "b207bbd3c3d0e5223b9249cc17959243b10f8d67" > REVISION as vagrant@34.76.138.14
+ DEBUG [5b139a50] Command: cd /var/www/html/stage/releases/20190703222828 && /usr/bin/env echo "b207bbd3c3d0e5223b9249cc17959243b10f8d67" > REVISION
+  INFO [5b139a50] Finished in 0.415 seconds with exit status 0 (successful).
+ DEBUG [45542d30] Running [ -f /var/www/html/stage/releases/20190703222828/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [45542d30] Command: [ -f /var/www/html/stage/releases/20190703222828/app/etc/config.local.php ]
+ DEBUG [45542d30] Finished in 0.265 seconds with exit status 1 (failed).
+ DEBUG [0744a6c1] Running /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/releases/20190703222828/app/etc/config.php";; exit((int)(isset($cfg["scopes"]) && isset($cfg["themes"])));; ' as vagrant@34.76.138.14
+ DEBUG [0744a6c1] Command: /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/releases/20190703222828/app/etc/config.php";; exit((int)(isset($cfg["scopes"]) && isset($cfg["themes"])));; '
+ DEBUG [0744a6c1] Finished in 0.463 seconds with exit status 0 (successful).
+  INFO [f10c9437] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703222828/app/etc /var/www/html/stage/releases/20190703222828/var as vagrant@34.76.138.14
+ DEBUG [f10c9437] Command: /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703222828/app/etc /var/www/html/stage/releases/20190703222828/var
+  INFO [f10c9437] Finished in 0.307 seconds with exit status 0 (successful).
+ DEBUG [4a65d158] Running [ -L /var/www/html/stage/releases/20190703222828/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [4a65d158] Command: [ -L /var/www/html/stage/releases/20190703222828/app/etc/env.php ]
+ DEBUG [4a65d158] Finished in 0.268 seconds with exit status 1 (failed).
+ DEBUG [1880f07d] Running [ -f /var/www/html/stage/releases/20190703222828/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [1880f07d] Command: [ -f /var/www/html/stage/releases/20190703222828/app/etc/env.php ]
+ DEBUG [1880f07d] Finished in 0.267 seconds with exit status 0 (successful).
+  INFO [9ece24c5] Running /usr/bin/env rm /var/www/html/stage/releases/20190703222828/app/etc/env.php as vagrant@34.76.138.14
+ DEBUG [9ece24c5] Command: /usr/bin/env rm /var/www/html/stage/releases/20190703222828/app/etc/env.php
+  INFO [9ece24c5] Finished in 0.267 seconds with exit status 0 (successful).
+  INFO [487bb8c7] Running /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190703222828/app/etc/env.php as vagrant@34.76.138.14
+ DEBUG [487bb8c7] Command: /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190703222828/app/etc/env.php
+  INFO [487bb8c7] Finished in 0.442 seconds with exit status 0 (successful).
+ DEBUG [4b484b7d] Running [ -L /var/www/html/stage/releases/20190703222828/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [4b484b7d] Command: [ -L /var/www/html/stage/releases/20190703222828/app/etc/config.local.php ]
+ DEBUG [4b484b7d] Finished in 0.415 seconds with exit status 1 (failed).
+ DEBUG [dfbd6c5e] Running [ -f /var/www/html/stage/releases/20190703222828/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [dfbd6c5e] Command: [ -f /var/www/html/stage/releases/20190703222828/app/etc/config.local.php ]
+ DEBUG [dfbd6c5e] Finished in 0.268 seconds with exit status 1 (failed).
+  INFO [b5726f90] Running /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/config.local.php /var/www/html/stage/releases/20190703222828/app/etc/config.local.php as vagrant@34.76.138.14
+ DEBUG [b5726f90] Command: /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/config.local.php /var/www/html/stage/releases/20190703222828/app/etc/config.local.php
+  INFO [b5726f90] Finished in 0.283 seconds with exit status 0 (successful).
+ DEBUG [38199c28] Running [ -L /var/www/html/stage/releases/20190703222828/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [38199c28] Command: [ -L /var/www/html/stage/releases/20190703222828/var/.setup_cronjob_status ]
+ DEBUG [38199c28] Finished in 0.278 seconds with exit status 1 (failed).
+ DEBUG [242bfbe8] Running [ -f /var/www/html/stage/releases/20190703222828/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [242bfbe8] Command: [ -f /var/www/html/stage/releases/20190703222828/var/.setup_cronjob_status ]
+ DEBUG [242bfbe8] Finished in 0.311 seconds with exit status 1 (failed).
+  INFO [0873c5ac] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/.setup_cronjob_status /var/www/html/stage/releases/20190703222828/var/.setup_cronjob_status as vagrant@34.76.138.14
+ DEBUG [0873c5ac] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/.setup_cronjob_status /var/www/html/stage/releases/20190703222828/var/.setup_cronjob_status
+  INFO [0873c5ac] Finished in 0.311 seconds with exit status 0 (successful).
+ DEBUG [4bc8d0c9] Running [ -L /var/www/html/stage/releases/20190703222828/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [4bc8d0c9] Command: [ -L /var/www/html/stage/releases/20190703222828/var/.update_cronjob_status ]
+ DEBUG [4bc8d0c9] Finished in 0.414 seconds with exit status 1 (failed).
+ DEBUG [0f85e523] Running [ -f /var/www/html/stage/releases/20190703222828/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [0f85e523] Command: [ -f /var/www/html/stage/releases/20190703222828/var/.update_cronjob_status ]
+ DEBUG [0f85e523] Finished in 0.340 seconds with exit status 1 (failed).
+  INFO [36fe7526] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/.update_cronjob_status /var/www/html/stage/releases/20190703222828/var/.update_cronjob_status as vagrant@34.76.138.14
+ DEBUG [36fe7526] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/.update_cronjob_status /var/www/html/stage/releases/20190703222828/var/.update_cronjob_status
+  INFO [36fe7526] Finished in 0.283 seconds with exit status 0 (successful).
+  INFO [8eae6a0b] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703222828/pub /var/www/html/stage/releases/20190703222828/var as vagrant@34.76.138.14
+ DEBUG [8eae6a0b] Command: /usr/bin/env mkdir -p /var/www/html/stage/releases/20190703222828/pub /var/www/html/stage/releases/20190703222828/var
+  INFO [8eae6a0b] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [8809b8d9] Running [ -L /var/www/html/stage/releases/20190703222828/pub/media ] as vagrant@34.76.138.14
+ DEBUG [8809b8d9] Command: [ -L /var/www/html/stage/releases/20190703222828/pub/media ]
+ DEBUG [8809b8d9] Finished in 0.352 seconds with exit status 1 (failed).
+ DEBUG [4ce618c8] Running [ -d /var/www/html/stage/releases/20190703222828/pub/media ] as vagrant@34.76.138.14
+ DEBUG [4ce618c8] Command: [ -d /var/www/html/stage/releases/20190703222828/pub/media ]
+ DEBUG [4ce618c8] Finished in 0.416 seconds with exit status 0 (successful).
+  INFO [48c00edc] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190703222828/pub/media as vagrant@34.76.138.14
+ DEBUG [48c00edc] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190703222828/pub/media
+  INFO [48c00edc] Finished in 0.344 seconds with exit status 0 (successful).
+  INFO [738e71ad] Running /usr/bin/env ln -s /var/www/html/stage/shared/pub/media /var/www/html/stage/releases/20190703222828/pub/media as vagrant@34.76.138.14
+ DEBUG [738e71ad] Command: /usr/bin/env ln -s /var/www/html/stage/shared/pub/media /var/www/html/stage/releases/20190703222828/pub/media
+  INFO [738e71ad] Finished in 0.268 seconds with exit status 0 (successful).
+ DEBUG [3cbbdc0e] Running [ -L /var/www/html/stage/releases/20190703222828/pub/sitemaps ] as vagrant@34.76.138.14
+ DEBUG [3cbbdc0e] Command: [ -L /var/www/html/stage/releases/20190703222828/pub/sitemaps ]
+ DEBUG [3cbbdc0e] Finished in 0.427 seconds with exit status 1 (failed).
+ DEBUG [78c53232] Running [ -d /var/www/html/stage/releases/20190703222828/pub/sitemaps ] as vagrant@34.76.138.14
+ DEBUG [78c53232] Command: [ -d /var/www/html/stage/releases/20190703222828/pub/sitemaps ]
+ DEBUG [78c53232] Finished in 0.445 seconds with exit status 1 (failed).
+  INFO [ee9d2862] Running /usr/bin/env ln -s /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/releases/20190703222828/pub/sitemaps as vagrant@34.76.138.14
+ DEBUG [ee9d2862] Command: /usr/bin/env ln -s /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/releases/20190703222828/pub/sitemaps
+  INFO [ee9d2862] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [6f175642] Running [ -L /var/www/html/stage/releases/20190703222828/var/backups ] as vagrant@34.76.138.14
+ DEBUG [6f175642] Command: [ -L /var/www/html/stage/releases/20190703222828/var/backups ]
+ DEBUG [6f175642] Finished in 0.310 seconds with exit status 1 (failed).
+ DEBUG [8e1362b8] Running [ -d /var/www/html/stage/releases/20190703222828/var/backups ] as vagrant@34.76.138.14
+ DEBUG [8e1362b8] Command: [ -d /var/www/html/stage/releases/20190703222828/var/backups ]
+ DEBUG [8e1362b8] Finished in 0.282 seconds with exit status 1 (failed).
+  INFO [f5cb5024] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/backups /var/www/html/stage/releases/20190703222828/var/backups as vagrant@34.76.138.14
+ DEBUG [f5cb5024] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/backups /var/www/html/stage/releases/20190703222828/var/backups
+  INFO [f5cb5024] Finished in 0.416 seconds with exit status 0 (successful).
+ DEBUG [c3f8d57a] Running [ -L /var/www/html/stage/releases/20190703222828/var/composer_home ] as vagrant@34.76.138.14
+ DEBUG [c3f8d57a] Command: [ -L /var/www/html/stage/releases/20190703222828/var/composer_home ]
+ DEBUG [c3f8d57a] Finished in 0.340 seconds with exit status 1 (failed).
+ DEBUG [28f116a3] Running [ -d /var/www/html/stage/releases/20190703222828/var/composer_home ] as vagrant@34.76.138.14
+ DEBUG [28f116a3] Command: [ -d /var/www/html/stage/releases/20190703222828/var/composer_home ]
+ DEBUG [28f116a3] Finished in 0.283 seconds with exit status 0 (successful).
+  INFO [5c97fdc3] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190703222828/var/composer_home as vagrant@34.76.138.14
+ DEBUG [5c97fdc3] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190703222828/var/composer_home
+  INFO [5c97fdc3] Finished in 0.414 seconds with exit status 0 (successful).
+  INFO [c22b256c] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/composer_home /var/www/html/stage/releases/20190703222828/var/composer_home as vagrant@34.76.138.14
+ DEBUG [c22b256c] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/composer_home /var/www/html/stage/releases/20190703222828/var/composer_home
+  INFO [c22b256c] Finished in 0.416 seconds with exit status 0 (successful).
+ DEBUG [06e6c53d] Running [ -L /var/www/html/stage/releases/20190703222828/var/importexport ] as vagrant@34.76.138.14
+ DEBUG [06e6c53d] Command: [ -L /var/www/html/stage/releases/20190703222828/var/importexport ]
+ DEBUG [06e6c53d] Finished in 0.266 seconds with exit status 1 (failed).
+ DEBUG [64ed43db] Running [ -d /var/www/html/stage/releases/20190703222828/var/importexport ] as vagrant@34.76.138.14
+ DEBUG [64ed43db] Command: [ -d /var/www/html/stage/releases/20190703222828/var/importexport ]
+ DEBUG [64ed43db] Finished in 0.280 seconds with exit status 1 (failed).
+  INFO [2afa74f2] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/importexport /var/www/html/stage/releases/20190703222828/var/importexport as vagrant@34.76.138.14
+ DEBUG [2afa74f2] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/importexport /var/www/html/stage/releases/20190703222828/var/importexport
+  INFO [2afa74f2] Finished in 0.266 seconds with exit status 0 (successful).
+ DEBUG [bbe446e5] Running [ -L /var/www/html/stage/releases/20190703222828/var/import_history ] as vagrant@34.76.138.14
+ DEBUG [bbe446e5] Command: [ -L /var/www/html/stage/releases/20190703222828/var/import_history ]
+ DEBUG [bbe446e5] Finished in 0.430 seconds with exit status 1 (failed).
+ DEBUG [1cf13c43] Running [ -d /var/www/html/stage/releases/20190703222828/var/import_history ] as vagrant@34.76.138.14
+ DEBUG [1cf13c43] Command: [ -d /var/www/html/stage/releases/20190703222828/var/import_history ]
+ DEBUG [1cf13c43] Finished in 0.342 seconds with exit status 1 (failed).
+  INFO [5390be4a] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/import_history /var/www/html/stage/releases/20190703222828/var/import_history as vagrant@34.76.138.14
+ DEBUG [5390be4a] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/import_history /var/www/html/stage/releases/20190703222828/var/import_history
+  INFO [5390be4a] Finished in 0.268 seconds with exit status 0 (successful).
+ DEBUG [dadc449e] Running [ -L /var/www/html/stage/releases/20190703222828/var/log ] as vagrant@34.76.138.14
+ DEBUG [dadc449e] Command: [ -L /var/www/html/stage/releases/20190703222828/var/log ]
+ DEBUG [dadc449e] Finished in 0.326 seconds with exit status 1 (failed).
+ DEBUG [6b72f9f5] Running [ -d /var/www/html/stage/releases/20190703222828/var/log ] as vagrant@34.76.138.14
+ DEBUG [6b72f9f5] Command: [ -d /var/www/html/stage/releases/20190703222828/var/log ]
+ DEBUG [6b72f9f5] Finished in 0.415 seconds with exit status 0 (successful).
+  INFO [280c37fc] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190703222828/var/log as vagrant@34.76.138.14
+ DEBUG [280c37fc] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190703222828/var/log
+  INFO [280c37fc] Finished in 0.343 seconds with exit status 0 (successful).
+  INFO [04d12f9b] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/log /var/www/html/stage/releases/20190703222828/var/log as vagrant@34.76.138.14
+ DEBUG [04d12f9b] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/log /var/www/html/stage/releases/20190703222828/var/log
+  INFO [04d12f9b] Finished in 0.268 seconds with exit status 0 (successful).
+ DEBUG [29db3bde] Running [ -L /var/www/html/stage/releases/20190703222828/var/session ] as vagrant@34.76.138.14
+ DEBUG [29db3bde] Command: [ -L /var/www/html/stage/releases/20190703222828/var/session ]
+ DEBUG [29db3bde] Finished in 0.266 seconds with exit status 1 (failed).
+ DEBUG [79a87b7b] Running [ -d /var/www/html/stage/releases/20190703222828/var/session ] as vagrant@34.76.138.14
+ DEBUG [79a87b7b] Command: [ -d /var/www/html/stage/releases/20190703222828/var/session ]
+ DEBUG [79a87b7b] Finished in 0.366 seconds with exit status 1 (failed).
+  INFO [33d7cd59] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/session /var/www/html/stage/releases/20190703222828/var/session as vagrant@34.76.138.14
+ DEBUG [33d7cd59] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/session /var/www/html/stage/releases/20190703222828/var/session
+  INFO [33d7cd59] Finished in 0.415 seconds with exit status 0 (successful).
+ DEBUG [4a879cca] Running [ -L /var/www/html/stage/releases/20190703222828/var/tmp ] as vagrant@34.76.138.14
+ DEBUG [4a879cca] Command: [ -L /var/www/html/stage/releases/20190703222828/var/tmp ]
+ DEBUG [4a879cca] Finished in 0.313 seconds with exit status 1 (failed).
+ DEBUG [5314a6df] Running [ -d /var/www/html/stage/releases/20190703222828/var/tmp ] as vagrant@34.76.138.14
+ DEBUG [5314a6df] Command: [ -d /var/www/html/stage/releases/20190703222828/var/tmp ]
+ DEBUG [5314a6df] Finished in 0.268 seconds with exit status 1 (failed).
+  INFO [6297a965] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/tmp /var/www/html/stage/releases/20190703222828/var/tmp as vagrant@34.76.138.14
+ DEBUG [6297a965] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/tmp /var/www/html/stage/releases/20190703222828/var/tmp
+  INFO [6297a965] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [501fc43e] Running [ -f /var/www/html/stage/releases/20190703222828/app/etc/config.php ] as vagrant@34.76.138.14
+ DEBUG [501fc43e] Command: [ -f /var/www/html/stage/releases/20190703222828/app/etc/config.php ]
+ DEBUG [501fc43e] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [2277621f] Running /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/shared/app/etc/env.php";; exit((int)!isset($cfg["install"]["date"]));; ' as vagrant@34.76.138.14
+ DEBUG [2277621f] Command: /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/shared/app/etc/env.php";; exit((int)!isset($cfg["install"]["date"]));; '
+ DEBUG [2277621f] Finished in 0.339 seconds with exit status 0 (successful).
+ DEBUG [5f828cd8] Running if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [5f828cd8] Command: if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi
+ DEBUG [5f828cd8] Finished in 0.418 seconds with exit status 0 (successful).
+ DEBUG [b9f04342] Running /usr/bin/env php -f /var/www/html/stage/releases/20190703222828/bin/magento -- -V --no-ansi as vagrant@34.76.138.14
+ DEBUG [b9f04342] Command: cd /var/www/html/stage/releases/20190703222828 && /usr/bin/env php -f /var/www/html/stage/releases/20190703222828/bin/magento -- -V --no-ansi
+ DEBUG [b9f04342] 	Magento CLI 2.3.1
+ DEBUG [b9f04342] Finished in 6.265 seconds with exit status 0 (successful).
+ DEBUG [d67740c0] Running if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [d67740c0] Command: if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi
+ DEBUG [d67740c0] Finished in 0.416 seconds with exit status 0 (successful).
+  INFO [5f6c3107] Running /usr/bin/env find /var/www/html/stage/releases/20190703222828 -type d ! -perm 2770 -exec chmod 2770 {} + as vagrant@34.76.138.14
+ DEBUG [5f6c3107] Command: cd /var/www/html/stage/releases/20190703222828 && /usr/bin/env find /var/www/html/stage/releases/20190703222828 -type d ! -perm 2770 -exec chmod 2770 {} +
+  INFO [5f6c3107] Finished in 4.593 seconds with exit status 0 (successful).
+  INFO [dd25a26e] Running /usr/bin/env find /var/www/html/stage/releases/20190703222828 -type f ! -perm 660 -exec chmod 660 {} + as vagrant@34.76.138.14
+ DEBUG [dd25a26e] Command: cd /var/www/html/stage/releases/20190703222828 && /usr/bin/env find /var/www/html/stage/releases/20190703222828 -type f ! -perm 660 -exec chmod 660 {} +
+  INFO [dd25a26e] Finished in 1.982 seconds with exit status 0 (successful).
+  INFO [a3bca31e] Running /usr/bin/env chmod +x /var/www/html/stage/releases/20190703222828/bin/magento as vagrant@34.76.138.14
+ DEBUG [a3bca31e] Command: cd /var/www/html/stage/releases/20190703222828 && /usr/bin/env chmod +x /var/www/html/stage/releases/20190703222828/bin/magento
+  INFO [a3bca31e] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [f127656c] Running /usr/bin/env php -f /var/www/html/stage/releases/20190703222828/bin/magento -- -V --no-ansi as vagrant@34.76.138.14
+ DEBUG [f127656c] Command: ( export MAGE_MODE="production" ; /usr/bin/env php -f /var/www/html/stage/releases/20190703222828/bin/magento -- -V --no-ansi )
+ DEBUG [f127656c] 	Magento CLI 2.3.1
+ DEBUG [f127656c] Finished in 0.665 seconds with exit status 0 (successful).
+ DEBUG [66244e25] Running if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [66244e25] Command: if test ! -d /var/www/html/stage/releases/20190703222828; then echo "Directory does not exist '/var/www/html/stage/releases/20190703222828'" 1>&2; false; fi
+ DEBUG [66244e25] Finished in 0.341 seconds with exit status 0 (successful).
+  INFO [3665d31b] Running /usr/bin/env touch /var/www/html/stage/releases/20190703222828/pub/static/deployed_version.txt as vagrant@34.76.138.14
+ DEBUG [3665d31b] Command: cd /var/www/html/stage/releases/20190703222828 && ( export MAGE_MODE="production" ; /usr/bin/env touch /var/www/html/stage/releases/20190703222828/pub/static/deployed_version.txt )
+  INFO [3665d31b] Finished in 0.488 seconds with exit status 0 (successful).
+ DEBUG [9924ebcf] Running /usr/bin/env php -f /var/www/html/stage/releases/20190703222828/bin/magento -- -V --no-ansi as vagrant@34.76.138.14
+ DEBUG [9924ebcf] Command: cd /var/www/html/stage/releases/20190703222828 && ( export MAGE_MODE="production" ; /usr/bin/env php -f /var/www/html/stage/releases/20190703222828/bin/magento -- -V --no-ansi )
+ DEBUG [9924ebcf] 	Magento CLI 2.3.1
+ DEBUG [9924ebcf] Finished in 1.146 seconds with exit status 0 (successful).
+  INFO [8b5a31b2] Running /usr/bin/env php -f bin/magento -- setup:static-content:deploy -f en_US as vagrant@34.76.138.14
+ DEBUG [8b5a31b2] Command: cd /var/www/html/stage/releases/20190703222828 && ( export MAGE_MODE="production" ; /usr/bin/env php -f bin/magento -- setup:static-content:deploy -f en_US )
+ DEBUG [8b5a31b2] 	
+Deploy using quick strategy
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            0/2271              >--------------------------- 0% %    < 1 sec
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            622/2271            =======>-------------------- 27% %   1 sec
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            861/2271            ==========>----------------- 37% %   2 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            1021/2271           ============>--------------- 44% %   3 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            1846/2271           ======================>----- 81% %   4 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2188/2271           ==========================>- 96% %   5 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2189/2271           ==========================>- 96% %   7 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2190/2271           ===========================> 96% %   10 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2191/2271           ===========================> 96% %   25 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2192/2271           ===========================> 96% %   26 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2194/2271           ===========================> 96% %   27 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         0/2337              >--------------------------- 0% %    < 1 sec
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         670/2337            ========>------------------- 28% %   1 sec
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         861/2337            ==========>----------------- 36% %   2 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         1054/2337           ============>--------------- 45% %   3 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         1889/2337           ======================>----- 80% %   4 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2187/2337           ==========================>- 93% %   26 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2188/2337           ==========================>- 93% %   33 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             242/2286            ==>------------------------- 10% %   1 sec
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             861/2286            ==========>----------------- 37% %   3 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             1352/2286           ================>----------- 59% %   4 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2059/2286           =========================>-- 90% %   5 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2188/2286           ==========================>- 95% %   6 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2189/2286           ==========================>- 95% %   8 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2190/2286           ==========================>- 95% %   12 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2191/2286           ==========================>- 95% %   31 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2192/2286           ==========================>- 95% %   32 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2194/2286           ==========================>- 95% %   34 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            95/2299             =>-------------------------- 4% %    1 sec
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            432/2299            =====>---------------------- 18% %   2 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            670/2299            ========>------------------- 29% %   3 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            861/2299            ==========>----------------- 37% %   5 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            1139/2299           =============>-------------- 49% %   6 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            1413/2299           =================>---------- 61% %   7 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            1716/2299           ====================>------- 74% %   8 secs
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	[1A[2K
+ DEBUG [8b5a31b2] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  27 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  33 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  34 secs             
+frontend/Solwin/freego/en_US            2030/2299           ========================>--- 88% %   9 secs
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('js/navigation-m...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/email-inlin...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/print.less', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/styles-l.le...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/styles-m.le...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/email-fonts...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/email.less', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('js/theme.js', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('js/responsive.j...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/stripes....', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/footer-s...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/footer-s...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/newslett...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/select-b...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/Luma-Icon...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/fontaweso...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/Luma-Icon...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/Luma-Icon...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/Luma-Icon...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/fontaweso...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/fontaweso...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/Luma-Icon...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/selection...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/FontAweso...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/fontaweso...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('fonts/fontaweso...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+ DEBUG [8b5a31b2] 	#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/blackdemo.c...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Pa
+ DEBUG [8b5a31b2] 	ckage\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('css/whitedemo.c...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/icn_addr...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/icn_hist...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/icn_stat...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+#0 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(74): Magento\Framework\View\Asset\File->getSourceFile()
+#1 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/View/Asset/Publisher.php(62): Magento\Framework\App\View\Asset\Publisher->publishAsset(Object(Magento\Framework\View\Asset\File))
+#2 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticFile.php(89): Magento\Framework\App\View\Asset\Publisher->publish(Object(Magento\Framework\View\Asset\File))
+#3 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(184): Magento\Deploy\Service\DeployStaticFile->deployFile('images/icn_chec...', Array)
+#4 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(131): Magento\Deploy\Service\DeployPackage->processFile(Object(Magento\Deploy\Package\PackageFile), Object(Magento\Deploy\Package\Package))
+#5 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(102): Magento\Deploy\Service\DeployPackage->deployEmulated(Object(Magento\Deploy\Package\Package), Array, false)
+#6 [internal function]: Magento\Deploy\Service\DeployPackage->Magento\Deploy\Service\{closure}()
+#7 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/App/State.php(187): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/stage/releases/20190703222828/generated/code/Magento/Framework/App/State/Interceptor.php(89): Magento\Framework\App\State->emulateAreaCode('frontend', Object(Closure), Array)
+#9 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployPackage.php(103): Magento\Framework\App\State\Interceptor->emulateAreaCode('frontend', Object(Closure))
+#10 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(310): Magento\Deploy\Service\DeployPackage->deploy(Object(Magento\Deploy\Package\Package), Array)
+#11 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(229): Magento\Deploy\Process\Queue->execute(Object(Magento\Deploy\Package\Package))
+#12 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(208): Magento\Deploy\Process\Queue->executePackage(Object(Magento\Deploy\Package\Package), 'frontend/Solwin...', Array, false)
+#13 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Process/Queue.php(162): Magento\Deploy\Process\Queue->assertAndExecute('frontend/Solwin...', Array, Array)
+#14 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Strategy/QuickDeploy.php(76): Magento\Deploy\Process\Queue->process()
+#15 /var/www/html/stage/releases/20190703222828/vendor/magento/module-deploy/Service/DeployStaticContent.php(112): Magento\Deploy\Strategy\QuickDeploy->deploy(Array)
+#16 /var/www/html/stage/releases/20190703222828/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(140): Magento\Deploy\Service\DeployStaticContent->deploy(Array)
+#17 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(893): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/stage/releases/20190703222828/vendor/magento/framework/Console/Cli.php(102): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/stage/releases/20190703222828/vendor/symfony/console/Application.php(145): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/stage/releases/20190703222828/bin/magento(23): Symfony\Component\Console\Application->run()
+#23 {main}
+
+In File.php line 151:
+                                                                               
+  The contents from the "/var/www/html/stage/releases/20190703222828/pub/stat  
+  ic/frontend/Solwin/freego/en_US/css/email-inline.css" file can't be read. W  
+  arning!file_get_contents(/var/www/html/stage/releases/20190703222828/pub/st  
+  atic/frontend/Solwin/freego/en_US/css/email-inline.css): failed to open str  
+  eam: No such file or directory                                               
+                                                                               
+
+setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--] [<languages>...]
+
