@@ -1,0 +1,1 @@
+/var/www/html/dev_env/vendor/amzn/amazon-pay-module/view/frontend/web/js/model/amazonPaymentConfig.js

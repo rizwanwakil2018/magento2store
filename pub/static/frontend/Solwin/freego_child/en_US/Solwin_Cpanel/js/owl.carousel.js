@@ -1,0 +1,1 @@
+/var/www/html/dev_env/app/code/Solwin/Cpanel/view/frontend/web/js/owl.carousel.js
