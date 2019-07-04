@@ -3,8 +3,8 @@ lock "~> 3.11.0"
 
 set :application, "magento_store"
 set :repo_url, "git@github.com:rizwanwakil2018/magento2store.git"
-set :magento_deploy_languages, ['en_US','en_GB']
-
+#set :magento_deploy_languages, ['en_US','en_GB']
+set :magento_deploy_languages, ['en_US]
 set :magento_auth_public_key, '6d304bfc5ac8e8cdac4c60c14247ca39'
 set :magento_auth_private_key, '65efe00a6ff3fcaf29d8ac13aef70531'
 
