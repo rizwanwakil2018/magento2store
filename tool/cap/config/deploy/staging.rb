@@ -11,7 +11,7 @@ server '34.76.138.14', user: 'vagrant', roles: %w{app db web}
  
 set :deploy_to, '/var/www/html/stage'
 #set :branch, proc { `git rev-parse --abbrev-ref staging`.chomp }
-set :branch, proc { `git rev-parse --abbrev-ref master`.chomp }
+set :branch, proc { `git rev-parse --abbrev-ref stage`.chomp }
 
 # role-based syntax
 # ==================
