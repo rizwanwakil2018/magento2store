@@ -22469,3 +22469,1060 @@ vertex
   INFO [12969daa] Running /usr/bin/env echo "Branch stage (at 7874b1a8abcd36dda8ff9710664f7924a7fc25a9) deployed as release 20190703233530 by vagrant" >> /var/www/html/stage/revisions.log as vagrant@34.76.138.14
  DEBUG [12969daa] Command: cd /var/www/html/stage/releases && /usr/bin/env echo "Branch stage (at 7874b1a8abcd36dda8ff9710664f7924a7fc25a9) deployed as release 20190703233530 by vagrant" >> /var/www/html/stage/revisions.log
   INFO [12969daa] Finished in 0.280 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-04 00:26:42 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8444f4a4] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [8444f4a4] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [8444f4a4] Finished in 1.725 seconds with exit status 0 (successful).
+  INFO [5b451d25] Running /usr/bin/env git fetch origin as vagrant@localhost
+ DEBUG [5b451d25] Command: /usr/bin/env git fetch origin
+  INFO [5b451d25] Finished in 1.773 seconds with exit status 0 (successful).
+ DEBUG [86c3fb1a] Running if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [86c3fb1a] Command: if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi
+ DEBUG [86c3fb1a] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG [c1f32960] Running /usr/bin/env cat REVISION as vagrant@34.76.138.14
+ DEBUG [c1f32960] Command: cd /var/www/html/stage/current && /usr/bin/env cat REVISION
+ DEBUG [c1f32960] 	7874b1a8abcd36dda8ff9710664f7924a7fc25a9
+ DEBUG [c1f32960] Finished in 0.291 seconds with exit status 0 (successful).
+ DEBUG [d0eea7e9] Running /usr/bin/env git name-rev --always --name-only 7874b1a8abcd36dda8ff9710664f7924a7fc25a9 as vagrant@localhost
+ DEBUG [d0eea7e9] Command: /usr/bin/env git name-rev --always --name-only 7874b1a8abcd36dda8ff9710664f7924a7fc25a9
+ DEBUG [d0eea7e9] 	stage~2
+ DEBUG [d0eea7e9] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [752deaad] Running /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u} as vagrant@localhost
+ DEBUG [752deaad] Command: /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u}
+ DEBUG [752deaad] 	origin/stage
+ DEBUG [752deaad] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [5a1ec7b9] Running /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u} as vagrant@localhost
+ DEBUG [5a1ec7b9] Command: /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u}
+ DEBUG [5a1ec7b9] 	origin/stage
+ DEBUG [5a1ec7b9] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [4b55f92d] Running /usr/bin/env git name-rev --always --name-only origin/stage as vagrant@localhost
+ DEBUG [4b55f92d] Command: /usr/bin/env git name-rev --always --name-only origin/stage
+ DEBUG [4b55f92d] 	stage
+ DEBUG [4b55f92d] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [bce02135] Running /usr/bin/env git log stage~2..stage --pretty="format:%C(yellow)%h %Cblue%>(12)%ai %Cgreen%<(7)%aN%Cred%d %Creset%s" as vagrant@localhost
+ DEBUG [bce02135] Command: /usr/bin/env git log stage~2..stage --pretty="format:%C(yellow)%h %Cblue%>(12)%ai %Cgreen%<(7)%aN%Cred%d %Creset%s"
+ DEBUG [bce02135] 	[33m8119563 [34m2019-07-04 16:24:25 +0400 [32mRizwan Khan[31m (HEAD -> stage, origin/stage) [madd in root of product the media file required for freeqo theme
+ DEBUG [bce02135] 	[33m59bef8d [34m2019-07-04 16:22:35 +0400 [32mRizwan Khan[31m [msome log files
+ DEBUG [bce02135] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [0;90mChanges pending deployment on 34.76.138.14 (stage~2 -> stage):[0m
+  INFO [33m8119563 [34m2019-07-04 16:24:25 +0400 [32mRizwan Khan[31m (HEAD -> stage, origin/stage) [madd in root of product the media file required for freeqo theme
+  INFO [33m59bef8d [34m2019-07-04 16:22:35 +0400 [32mRizwan Khan[31m [msome log files
+ DEBUG [05e82826] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [05e82826] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [05e82826] Finished in 0.252 seconds with exit status 0 (successful).
+ DEBUG [d60ad692] Running if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [d60ad692] Command: if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi
+ DEBUG [d60ad692] Finished in 0.339 seconds with exit status 0 (successful).
+ DEBUG [cc614311] Running /usr/bin/env cat REVISION as vagrant@34.76.138.14
+ DEBUG [cc614311] Command: cd /var/www/html/stage/current && /usr/bin/env cat REVISION
+ DEBUG [cc614311] 	7874b1a8abcd36dda8ff9710664f7924a7fc25a9
+ DEBUG [cc614311] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [86b4a036] Running /usr/bin/env git name-rev --always --name-only 7874b1a8abcd36dda8ff9710664f7924a7fc25a9 as vagrant@localhost
+ DEBUG [86b4a036] Command: /usr/bin/env git name-rev --always --name-only 7874b1a8abcd36dda8ff9710664f7924a7fc25a9
+ DEBUG [86b4a036] 	stage~2
+ DEBUG [86b4a036] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [e6148cc5] Running /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u} as vagrant@localhost
+ DEBUG [e6148cc5] Command: /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u}
+ DEBUG [e6148cc5] 	origin/stage
+ DEBUG [e6148cc5] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG [e8c1a0f2] Running /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u} as vagrant@localhost
+ DEBUG [e8c1a0f2] Command: /usr/bin/env git rev-parse --abbrev-ref --symbolic-full-name stage@{u}
+ DEBUG [e8c1a0f2] 	origin/stage
+ DEBUG [e8c1a0f2] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG [f3a5ba35] Running /usr/bin/env git name-rev --always --name-only origin/stage as vagrant@localhost
+ DEBUG [f3a5ba35] Command: /usr/bin/env git name-rev --always --name-only origin/stage
+ DEBUG [f3a5ba35] 	stage
+ DEBUG [f3a5ba35] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [2a891039] Running /usr/bin/env mkdir -p /tmp as vagrant@34.76.138.14
+ DEBUG [2a891039] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2a891039] Finished in 0.254 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-magento_store-staging-vagrant.sh 100.0%
+  INFO [65082083] Running /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh as vagrant@34.76.138.14
+ DEBUG [65082083] Command: /usr/bin/env chmod 700 /tmp/git-ssh-magento_store-staging-vagrant.sh
+  INFO [65082083] Finished in 0.424 seconds with exit status 0 (successful).
+  INFO [6307797a] Running /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD as vagrant@34.76.138.14
+ DEBUG [6307797a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:rizwanwakil2018/magento2store.git HEAD )
+ DEBUG [6307797a] 	0c93075c1b760d96ed9219f8d2521cb91925dd33	HEAD
+  INFO [6307797a] Finished in 1.636 seconds with exit status 0 (successful).
+  INFO [1510a587] Running /usr/bin/env mkdir -p /var/www/html/stage/shared /var/www/html/stage/releases as vagrant@34.76.138.14
+ DEBUG [1510a587] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared /var/www/html/stage/releases
+  INFO [1510a587] Finished in 0.258 seconds with exit status 0 (successful).
+  INFO [2d6868a9] Running /usr/bin/env mkdir -p /var/www/html/stage/shared/pub/media /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/shared/var/backups /var/www/html/stage/shared/var/composer_home /var/www/html/stage/shared/var/importexport /var/www/html/stage/shared/var/import_history /var/www/html/stage/shared/var/log /var/www/html/stage/shared/var/session /var/www/html/stage/shared/var/tmp as vagrant@34.76.138.14
+ DEBUG [2d6868a9] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared/pub/media /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/shared/var/backups /var/www/html/stage/shared/var/composer_home /var/www/html/stage/shared/var/importexport /var/www/html/stage/shared/var/import_history /var/www/html/stage/shared/var/log /var/www/html/stage/shared/var/session /var/www/html/stage/shared/var/tmp
+  INFO [2d6868a9] Finished in 0.390 seconds with exit status 0 (successful).
+  INFO [6fa0f763] Running /usr/bin/env mkdir -p /var/www/html/stage/shared/app/etc /var/www/html/stage/shared/var as vagrant@34.76.138.14
+ DEBUG [6fa0f763] Command: /usr/bin/env mkdir -p /var/www/html/stage/shared/app/etc /var/www/html/stage/shared/var
+  INFO [6fa0f763] Finished in 0.415 seconds with exit status 0 (successful).
+ DEBUG [b1bdfdb5] Running [ -f /var/www/html/stage/shared/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [b1bdfdb5] Command: [ -f /var/www/html/stage/shared/app/etc/env.php ]
+ DEBUG [b1bdfdb5] Finished in 0.251 seconds with exit status 0 (successful).
+ DEBUG [624fa088] Running [ -f /var/www/html/stage/shared/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [624fa088] Command: [ -f /var/www/html/stage/shared/app/etc/config.local.php ]
+ DEBUG [624fa088] Finished in 0.282 seconds with exit status 0 (successful).
+ DEBUG [b29d822b] Running [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [b29d822b] Command: [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ]
+ DEBUG [b29d822b] Finished in 0.252 seconds with exit status 0 (successful).
+ DEBUG [5abcc2a9] Running [ -f /var/www/html/stage/shared/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [5abcc2a9] Command: [ -f /var/www/html/stage/shared/var/.update_cronjob_status ]
+ DEBUG [5abcc2a9] Finished in 0.273 seconds with exit status 0 (successful).
+ DEBUG [1318d330] Running [ -f /var/www/html/stage/shared/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [1318d330] Command: [ -f /var/www/html/stage/shared/app/etc/env.php ]
+ DEBUG [1318d330] Finished in 0.278 seconds with exit status 0 (successful).
+ DEBUG [2f43044b] Running [ -f /var/www/html/stage/shared/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [2f43044b] Command: [ -f /var/www/html/stage/shared/app/etc/config.local.php ]
+ DEBUG [2f43044b] Finished in 0.346 seconds with exit status 0 (successful).
+ DEBUG [b81700fd] Running [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [b81700fd] Command: [ -f /var/www/html/stage/shared/var/.setup_cronjob_status ]
+ DEBUG [b81700fd] Finished in 0.290 seconds with exit status 0 (successful).
+ DEBUG [cdd9b59b] Running [ -f /var/www/html/stage/shared/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [cdd9b59b] Command: [ -f /var/www/html/stage/shared/var/.update_cronjob_status ]
+ DEBUG [cdd9b59b] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG [ba247a4f] Running [ -f /var/www/html/stage/current/REVISION ] as vagrant@34.76.138.14
+ DEBUG [ba247a4f] Command: [ -f /var/www/html/stage/current/REVISION ]
+ DEBUG [ba247a4f] Finished in 0.272 seconds with exit status 0 (successful).
+ DEBUG [d7303ae0] Running /usr/bin/env cat /var/www/html/stage/current/REVISION 2>/dev/null as vagrant@34.76.138.14
+ DEBUG [d7303ae0] Command: /usr/bin/env cat /var/www/html/stage/current/REVISION 2>/dev/null
+ DEBUG [d7303ae0] 	7874b1a8abcd36dda8ff9710664f7924a7fc25a9
+ DEBUG [d7303ae0] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [52891b42] Running [ -f /var/www/html/stage/repo/HEAD ] as vagrant@34.76.138.14
+ DEBUG [52891b42] Command: [ -f /var/www/html/stage/repo/HEAD ]
+ DEBUG [52891b42] Finished in 0.284 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/stage/repo
+ DEBUG [eb4ade8b] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [eb4ade8b] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [eb4ade8b] Finished in 0.287 seconds with exit status 0 (successful).
+  INFO [cb66cb5f] Running /usr/bin/env git remote set-url origin git@github.com:rizwanwakil2018/magento2store.git as vagrant@34.76.138.14
+ DEBUG [cb66cb5f] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git remote set-url origin git@github.com:rizwanwakil2018/magento2store.git )
+  INFO [cb66cb5f] Finished in 0.461 seconds with exit status 0 (successful).
+  INFO [64da2777] Running /usr/bin/env git remote update --prune as vagrant@34.76.138.14
+ DEBUG [64da2777] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [64da2777] 	Fetching origin
+ DEBUG [64da2777] 	From github.com:rizwanwakil2018/magento2store
+   7874b1a..8119563  stage      -> stage
+  INFO [64da2777] Finished in 4.770 seconds with exit status 0 (successful).
+ DEBUG [59aabb13] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [59aabb13] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [59aabb13] Finished in 0.250 seconds with exit status 0 (successful).
+  INFO [6c7c2bb9] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190704002655 as vagrant@34.76.138.14
+ DEBUG [6c7c2bb9] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env mkdir -p /var/www/html/stage/releases/20190704002655 )
+  INFO [6c7c2bb9] Finished in 0.275 seconds with exit status 0 (successful).
+  INFO [75e7ca9f] Running /usr/bin/env git archive stage | /usr/bin/env tar -x -f - -C /var/www/html/stage/releases/20190704002655 as vagrant@34.76.138.14
+ DEBUG [75e7ca9f] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git archive stage | /usr/bin/env tar -x -f - -C /var/www/html/stage/releases/20190704002655 )
+  INFO [75e7ca9f] Finished in 13.863 seconds with exit status 0 (successful).
+ DEBUG [6926d623] Running if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [6926d623] Command: if test ! -d /var/www/html/stage/repo; then echo "Directory does not exist '/var/www/html/stage/repo'" 1>&2; false; fi
+ DEBUG [6926d623] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [92f8691b] Running /usr/bin/env git rev-list --max-count=1 stage as vagrant@34.76.138.14
+ DEBUG [92f8691b] Command: cd /var/www/html/stage/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-magento_store-staging-vagrant.sh" ; /usr/bin/env git rev-list --max-count=1 stage )
+ DEBUG [92f8691b] 	811956355ff6b3ef0e84e6cc6452a54658444cbc
+ DEBUG [92f8691b] Finished in 0.521 seconds with exit status 0 (successful).
+ DEBUG [a90e576c] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [a90e576c] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [a90e576c] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [bdaaf27c] Running /usr/bin/env echo "811956355ff6b3ef0e84e6cc6452a54658444cbc" > REVISION as vagrant@34.76.138.14
+ DEBUG [bdaaf27c] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env echo "811956355ff6b3ef0e84e6cc6452a54658444cbc" > REVISION
+  INFO [bdaaf27c] Finished in 0.291 seconds with exit status 0 (successful).
+ DEBUG [77f8d259] Running [ -f /var/www/html/stage/releases/20190704002655/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [77f8d259] Command: [ -f /var/www/html/stage/releases/20190704002655/app/etc/config.local.php ]
+ DEBUG [77f8d259] Finished in 0.249 seconds with exit status 1 (failed).
+ DEBUG [f58f0649] Running /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/releases/20190704002655/app/etc/config.php";; exit((int)(isset($cfg["scopes"]) && isset($cfg["themes"])));; ' as vagrant@34.76.138.14
+ DEBUG [f58f0649] Command: /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/releases/20190704002655/app/etc/config.php";; exit((int)(isset($cfg["scopes"]) && isset($cfg["themes"])));; '
+ DEBUG [f58f0649] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO [7800dccf] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190704002655/app/etc /var/www/html/stage/releases/20190704002655/var as vagrant@34.76.138.14
+ DEBUG [7800dccf] Command: /usr/bin/env mkdir -p /var/www/html/stage/releases/20190704002655/app/etc /var/www/html/stage/releases/20190704002655/var
+  INFO [7800dccf] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [f125380c] Running [ -L /var/www/html/stage/releases/20190704002655/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [f125380c] Command: [ -L /var/www/html/stage/releases/20190704002655/app/etc/env.php ]
+ DEBUG [f125380c] Finished in 0.249 seconds with exit status 1 (failed).
+ DEBUG [b97ec85e] Running [ -f /var/www/html/stage/releases/20190704002655/app/etc/env.php ] as vagrant@34.76.138.14
+ DEBUG [b97ec85e] Command: [ -f /var/www/html/stage/releases/20190704002655/app/etc/env.php ]
+ DEBUG [b97ec85e] Finished in 0.324 seconds with exit status 0 (successful).
+  INFO [39b5147e] Running /usr/bin/env rm /var/www/html/stage/releases/20190704002655/app/etc/env.php as vagrant@34.76.138.14
+ DEBUG [39b5147e] Command: /usr/bin/env rm /var/www/html/stage/releases/20190704002655/app/etc/env.php
+  INFO [39b5147e] Finished in 0.419 seconds with exit status 0 (successful).
+  INFO [a100d20e] Running /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190704002655/app/etc/env.php as vagrant@34.76.138.14
+ DEBUG [a100d20e] Command: /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190704002655/app/etc/env.php
+  INFO [a100d20e] Finished in 0.331 seconds with exit status 0 (successful).
+ DEBUG [d3060d17] Running [ -L /var/www/html/stage/releases/20190704002655/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [d3060d17] Command: [ -L /var/www/html/stage/releases/20190704002655/app/etc/config.local.php ]
+ DEBUG [d3060d17] Finished in 0.252 seconds with exit status 1 (failed).
+ DEBUG [ae4dad86] Running [ -f /var/www/html/stage/releases/20190704002655/app/etc/config.local.php ] as vagrant@34.76.138.14
+ DEBUG [ae4dad86] Command: [ -f /var/www/html/stage/releases/20190704002655/app/etc/config.local.php ]
+ DEBUG [ae4dad86] Finished in 0.346 seconds with exit status 1 (failed).
+  INFO [e0d6fce9] Running /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/config.local.php /var/www/html/stage/releases/20190704002655/app/etc/config.local.php as vagrant@34.76.138.14
+ DEBUG [e0d6fce9] Command: /usr/bin/env ln -s /var/www/html/stage/shared/app/etc/config.local.php /var/www/html/stage/releases/20190704002655/app/etc/config.local.php
+  INFO [e0d6fce9] Finished in 0.416 seconds with exit status 0 (successful).
+ DEBUG [593d61e1] Running [ -L /var/www/html/stage/releases/20190704002655/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [593d61e1] Command: [ -L /var/www/html/stage/releases/20190704002655/var/.setup_cronjob_status ]
+ DEBUG [593d61e1] Finished in 0.331 seconds with exit status 1 (failed).
+ DEBUG [821c179f] Running [ -f /var/www/html/stage/releases/20190704002655/var/.setup_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [821c179f] Command: [ -f /var/www/html/stage/releases/20190704002655/var/.setup_cronjob_status ]
+ DEBUG [821c179f] Finished in 0.252 seconds with exit status 1 (failed).
+  INFO [9733c737] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/.setup_cronjob_status /var/www/html/stage/releases/20190704002655/var/.setup_cronjob_status as vagrant@34.76.138.14
+ DEBUG [9733c737] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/.setup_cronjob_status /var/www/html/stage/releases/20190704002655/var/.setup_cronjob_status
+  INFO [9733c737] Finished in 0.266 seconds with exit status 0 (successful).
+ DEBUG [4a1257de] Running [ -L /var/www/html/stage/releases/20190704002655/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [4a1257de] Command: [ -L /var/www/html/stage/releases/20190704002655/var/.update_cronjob_status ]
+ DEBUG [4a1257de] Finished in 0.250 seconds with exit status 1 (failed).
+ DEBUG [4be07cfd] Running [ -f /var/www/html/stage/releases/20190704002655/var/.update_cronjob_status ] as vagrant@34.76.138.14
+ DEBUG [4be07cfd] Command: [ -f /var/www/html/stage/releases/20190704002655/var/.update_cronjob_status ]
+ DEBUG [4be07cfd] Finished in 0.350 seconds with exit status 1 (failed).
+  INFO [4853069f] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/.update_cronjob_status /var/www/html/stage/releases/20190704002655/var/.update_cronjob_status as vagrant@34.76.138.14
+ DEBUG [4853069f] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/.update_cronjob_status /var/www/html/stage/releases/20190704002655/var/.update_cronjob_status
+  INFO [4853069f] Finished in 0.416 seconds with exit status 0 (successful).
+  INFO [989daf24] Running /usr/bin/env mkdir -p /var/www/html/stage/releases/20190704002655/pub /var/www/html/stage/releases/20190704002655/var as vagrant@34.76.138.14
+ DEBUG [989daf24] Command: /usr/bin/env mkdir -p /var/www/html/stage/releases/20190704002655/pub /var/www/html/stage/releases/20190704002655/var
+  INFO [989daf24] Finished in 0.252 seconds with exit status 0 (successful).
+ DEBUG [2a68909a] Running [ -L /var/www/html/stage/releases/20190704002655/pub/media ] as vagrant@34.76.138.14
+ DEBUG [2a68909a] Command: [ -L /var/www/html/stage/releases/20190704002655/pub/media ]
+ DEBUG [2a68909a] Finished in 0.263 seconds with exit status 1 (failed).
+ DEBUG [b645f356] Running [ -d /var/www/html/stage/releases/20190704002655/pub/media ] as vagrant@34.76.138.14
+ DEBUG [b645f356] Command: [ -d /var/www/html/stage/releases/20190704002655/pub/media ]
+ DEBUG [b645f356] Finished in 0.335 seconds with exit status 0 (successful).
+  INFO [d3c92714] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190704002655/pub/media as vagrant@34.76.138.14
+ DEBUG [d3c92714] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190704002655/pub/media
+  INFO [d3c92714] Finished in 0.291 seconds with exit status 0 (successful).
+  INFO [9cb2de1a] Running /usr/bin/env ln -s /var/www/html/stage/shared/pub/media /var/www/html/stage/releases/20190704002655/pub/media as vagrant@34.76.138.14
+ DEBUG [9cb2de1a] Command: /usr/bin/env ln -s /var/www/html/stage/shared/pub/media /var/www/html/stage/releases/20190704002655/pub/media
+  INFO [9cb2de1a] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [699fa43d] Running [ -L /var/www/html/stage/releases/20190704002655/pub/sitemaps ] as vagrant@34.76.138.14
+ DEBUG [699fa43d] Command: [ -L /var/www/html/stage/releases/20190704002655/pub/sitemaps ]
+ DEBUG [699fa43d] Finished in 0.364 seconds with exit status 1 (failed).
+ DEBUG [4cf3a118] Running [ -d /var/www/html/stage/releases/20190704002655/pub/sitemaps ] as vagrant@34.76.138.14
+ DEBUG [4cf3a118] Command: [ -d /var/www/html/stage/releases/20190704002655/pub/sitemaps ]
+ DEBUG [4cf3a118] Finished in 0.416 seconds with exit status 1 (failed).
+  INFO [b2e551e2] Running /usr/bin/env ln -s /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/releases/20190704002655/pub/sitemaps as vagrant@34.76.138.14
+ DEBUG [b2e551e2] Command: /usr/bin/env ln -s /var/www/html/stage/shared/pub/sitemaps /var/www/html/stage/releases/20190704002655/pub/sitemaps
+  INFO [b2e551e2] Finished in 0.335 seconds with exit status 0 (successful).
+ DEBUG [687bfaaa] Running [ -L /var/www/html/stage/releases/20190704002655/var/backups ] as vagrant@34.76.138.14
+ DEBUG [687bfaaa] Command: [ -L /var/www/html/stage/releases/20190704002655/var/backups ]
+ DEBUG [687bfaaa] Finished in 0.250 seconds with exit status 1 (failed).
+ DEBUG [37fed438] Running [ -d /var/www/html/stage/releases/20190704002655/var/backups ] as vagrant@34.76.138.14
+ DEBUG [37fed438] Command: [ -d /var/www/html/stage/releases/20190704002655/var/backups ]
+ DEBUG [37fed438] Finished in 0.251 seconds with exit status 1 (failed).
+  INFO [51d7ad5d] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/backups /var/www/html/stage/releases/20190704002655/var/backups as vagrant@34.76.138.14
+ DEBUG [51d7ad5d] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/backups /var/www/html/stage/releases/20190704002655/var/backups
+  INFO [51d7ad5d] Finished in 0.251 seconds with exit status 0 (successful).
+ DEBUG [5919ccd7] Running [ -L /var/www/html/stage/releases/20190704002655/var/composer_home ] as vagrant@34.76.138.14
+ DEBUG [5919ccd7] Command: [ -L /var/www/html/stage/releases/20190704002655/var/composer_home ]
+ DEBUG [5919ccd7] Finished in 0.365 seconds with exit status 1 (failed).
+ DEBUG [6ed744b6] Running [ -d /var/www/html/stage/releases/20190704002655/var/composer_home ] as vagrant@34.76.138.14
+ DEBUG [6ed744b6] Command: [ -d /var/www/html/stage/releases/20190704002655/var/composer_home ]
+ DEBUG [6ed744b6] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [cd312583] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190704002655/var/composer_home as vagrant@34.76.138.14
+ DEBUG [cd312583] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190704002655/var/composer_home
+  INFO [cd312583] Finished in 0.261 seconds with exit status 0 (successful).
+  INFO [3fedc8f4] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/composer_home /var/www/html/stage/releases/20190704002655/var/composer_home as vagrant@34.76.138.14
+ DEBUG [3fedc8f4] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/composer_home /var/www/html/stage/releases/20190704002655/var/composer_home
+  INFO [3fedc8f4] Finished in 0.317 seconds with exit status 0 (successful).
+ DEBUG [8485e60c] Running [ -L /var/www/html/stage/releases/20190704002655/var/importexport ] as vagrant@34.76.138.14
+ DEBUG [8485e60c] Command: [ -L /var/www/html/stage/releases/20190704002655/var/importexport ]
+ DEBUG [8485e60c] Finished in 0.249 seconds with exit status 1 (failed).
+ DEBUG [90a9ade1] Running [ -d /var/www/html/stage/releases/20190704002655/var/importexport ] as vagrant@34.76.138.14
+ DEBUG [90a9ade1] Command: [ -d /var/www/html/stage/releases/20190704002655/var/importexport ]
+ DEBUG [90a9ade1] Finished in 0.291 seconds with exit status 1 (failed).
+  INFO [9c31681b] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/importexport /var/www/html/stage/releases/20190704002655/var/importexport as vagrant@34.76.138.14
+ DEBUG [9c31681b] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/importexport /var/www/html/stage/releases/20190704002655/var/importexport
+  INFO [9c31681b] Finished in 0.395 seconds with exit status 0 (successful).
+ DEBUG [8578e83d] Running [ -L /var/www/html/stage/releases/20190704002655/var/import_history ] as vagrant@34.76.138.14
+ DEBUG [8578e83d] Command: [ -L /var/www/html/stage/releases/20190704002655/var/import_history ]
+ DEBUG [8578e83d] Finished in 0.249 seconds with exit status 1 (failed).
+ DEBUG [20cccd32] Running [ -d /var/www/html/stage/releases/20190704002655/var/import_history ] as vagrant@34.76.138.14
+ DEBUG [20cccd32] Command: [ -d /var/www/html/stage/releases/20190704002655/var/import_history ]
+ DEBUG [20cccd32] Finished in 0.294 seconds with exit status 1 (failed).
+  INFO [cc6e4adc] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/import_history /var/www/html/stage/releases/20190704002655/var/import_history as vagrant@34.76.138.14
+ DEBUG [cc6e4adc] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/import_history /var/www/html/stage/releases/20190704002655/var/import_history
+  INFO [cc6e4adc] Finished in 0.287 seconds with exit status 0 (successful).
+ DEBUG [92c39399] Running [ -L /var/www/html/stage/releases/20190704002655/var/log ] as vagrant@34.76.138.14
+ DEBUG [92c39399] Command: [ -L /var/www/html/stage/releases/20190704002655/var/log ]
+ DEBUG [92c39399] Finished in 0.251 seconds with exit status 1 (failed).
+ DEBUG [65cf230c] Running [ -d /var/www/html/stage/releases/20190704002655/var/log ] as vagrant@34.76.138.14
+ DEBUG [65cf230c] Command: [ -d /var/www/html/stage/releases/20190704002655/var/log ]
+ DEBUG [65cf230c] Finished in 0.288 seconds with exit status 0 (successful).
+  INFO [cb25b47b] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190704002655/var/log as vagrant@34.76.138.14
+ DEBUG [cb25b47b] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190704002655/var/log
+  INFO [cb25b47b] Finished in 0.319 seconds with exit status 0 (successful).
+  INFO [33d5b1c3] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/log /var/www/html/stage/releases/20190704002655/var/log as vagrant@34.76.138.14
+ DEBUG [33d5b1c3] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/log /var/www/html/stage/releases/20190704002655/var/log
+  INFO [33d5b1c3] Finished in 0.308 seconds with exit status 0 (successful).
+ DEBUG [4356c65d] Running [ -L /var/www/html/stage/releases/20190704002655/var/session ] as vagrant@34.76.138.14
+ DEBUG [4356c65d] Command: [ -L /var/www/html/stage/releases/20190704002655/var/session ]
+ DEBUG [4356c65d] Finished in 0.288 seconds with exit status 1 (failed).
+ DEBUG [fbeee147] Running [ -d /var/www/html/stage/releases/20190704002655/var/session ] as vagrant@34.76.138.14
+ DEBUG [fbeee147] Command: [ -d /var/www/html/stage/releases/20190704002655/var/session ]
+ DEBUG [fbeee147] Finished in 0.251 seconds with exit status 1 (failed).
+  INFO [cfa57aa0] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/session /var/www/html/stage/releases/20190704002655/var/session as vagrant@34.76.138.14
+ DEBUG [cfa57aa0] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/session /var/www/html/stage/releases/20190704002655/var/session
+  INFO [cfa57aa0] Finished in 0.288 seconds with exit status 0 (successful).
+ DEBUG [2ff762b0] Running [ -L /var/www/html/stage/releases/20190704002655/var/tmp ] as vagrant@34.76.138.14
+ DEBUG [2ff762b0] Command: [ -L /var/www/html/stage/releases/20190704002655/var/tmp ]
+ DEBUG [2ff762b0] Finished in 0.290 seconds with exit status 1 (failed).
+ DEBUG [2ef1ec81] Running [ -d /var/www/html/stage/releases/20190704002655/var/tmp ] as vagrant@34.76.138.14
+ DEBUG [2ef1ec81] Command: [ -d /var/www/html/stage/releases/20190704002655/var/tmp ]
+ DEBUG [2ef1ec81] Finished in 0.417 seconds with exit status 1 (failed).
+  INFO [a921b1be] Running /usr/bin/env ln -s /var/www/html/stage/shared/var/tmp /var/www/html/stage/releases/20190704002655/var/tmp as vagrant@34.76.138.14
+ DEBUG [a921b1be] Command: /usr/bin/env ln -s /var/www/html/stage/shared/var/tmp /var/www/html/stage/releases/20190704002655/var/tmp
+  INFO [a921b1be] Finished in 0.417 seconds with exit status 0 (successful).
+ DEBUG [a9e0728f] Running [ -f /var/www/html/stage/releases/20190704002655/app/etc/config.php ] as vagrant@34.76.138.14
+ DEBUG [a9e0728f] Command: [ -f /var/www/html/stage/releases/20190704002655/app/etc/config.php ]
+ DEBUG [a9e0728f] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG [b2f070a2] Running /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/shared/app/etc/env.php";; exit((int)!isset($cfg["install"]["date"]));; ' as vagrant@34.76.138.14
+ DEBUG [b2f070a2] Command: /usr/bin/env php -r '; $cfg = include "/var/www/html/stage/shared/app/etc/env.php";; exit((int)!isset($cfg["install"]["date"]));; '
+ DEBUG [b2f070a2] Finished in 0.351 seconds with exit status 0 (successful).
+ DEBUG [5651d862] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [5651d862] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [5651d862] Finished in 0.332 seconds with exit status 0 (successful).
+ DEBUG [e303395c] Running /usr/bin/env php -f /var/www/html/stage/releases/20190704002655/bin/magento -- -V --no-ansi as vagrant@34.76.138.14
+ DEBUG [e303395c] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env php -f /var/www/html/stage/releases/20190704002655/bin/magento -- -V --no-ansi
+ DEBUG [e303395c] 	Magento CLI 2.3.1
+ DEBUG [e303395c] Finished in 6.475 seconds with exit status 0 (successful).
+ DEBUG [ca8362c3] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [ca8362c3] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [ca8362c3] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [95373a64] Running /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type d ! -perm 2770 -exec chmod 2770 {} + as vagrant@34.76.138.14
+ DEBUG [95373a64] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type d ! -perm 2770 -exec chmod 2770 {} +
+  INFO [95373a64] Finished in 4.313 seconds with exit status 0 (successful).
+  INFO [9b08bfbc] Running /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type f ! -perm 660 -exec chmod 660 {} + as vagrant@34.76.138.14
+ DEBUG [9b08bfbc] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type f ! -perm 660 -exec chmod 660 {} +
+  INFO [9b08bfbc] Finished in 1.715 seconds with exit status 0 (successful).
+  INFO [a51237a6] Running /usr/bin/env chmod +x /var/www/html/stage/releases/20190704002655/bin/magento as vagrant@34.76.138.14
+ DEBUG [a51237a6] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env chmod +x /var/www/html/stage/releases/20190704002655/bin/magento
+  INFO [a51237a6] Finished in 0.252 seconds with exit status 0 (successful).
+ DEBUG [15cba7a5] Running /usr/bin/env php -f /var/www/html/stage/releases/20190704002655/bin/magento -- -V --no-ansi as vagrant@34.76.138.14
+ DEBUG [15cba7a5] Command: ( export MAGE_MODE="production" ; /usr/bin/env php -f /var/www/html/stage/releases/20190704002655/bin/magento -- -V --no-ansi )
+ DEBUG [15cba7a5] 	Magento CLI 2.3.1
+ DEBUG [15cba7a5] Finished in 0.893 seconds with exit status 0 (successful).
+ DEBUG [1a1db298] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [1a1db298] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [1a1db298] Finished in 0.330 seconds with exit status 0 (successful).
+  INFO [2c1ee9c6] Running /usr/bin/env touch /var/www/html/stage/releases/20190704002655/pub/static/deployed_version.txt as vagrant@34.76.138.14
+ DEBUG [2c1ee9c6] Command: cd /var/www/html/stage/releases/20190704002655 && ( export MAGE_MODE="production" ; /usr/bin/env touch /var/www/html/stage/releases/20190704002655/pub/static/deployed_version.txt )
+  INFO [2c1ee9c6] Finished in 0.291 seconds with exit status 0 (successful).
+ DEBUG [02453a8c] Running /usr/bin/env php -f /var/www/html/stage/releases/20190704002655/bin/magento -- -V --no-ansi as vagrant@34.76.138.14
+ DEBUG [02453a8c] Command: cd /var/www/html/stage/releases/20190704002655 && ( export MAGE_MODE="production" ; /usr/bin/env php -f /var/www/html/stage/releases/20190704002655/bin/magento -- -V --no-ansi )
+ DEBUG [02453a8c] 	Magento CLI 2.3.1
+ DEBUG [02453a8c] Finished in 1.461 seconds with exit status 0 (successful).
+  INFO [df924fab] Running /usr/bin/env php -f bin/magento -- setup:static-content:deploy -f en_US as vagrant@34.76.138.14
+ DEBUG [df924fab] Command: cd /var/www/html/stage/releases/20190704002655 && ( export MAGE_MODE="production" ; /usr/bin/env php -f bin/magento -- setup:static-content:deploy -f en_US )
+ DEBUG [df924fab] 	
+Deploy using quick strategy
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            0/2271              >--------------------------- 0% %    < 1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            80/2271             >--------------------------- 3% %    1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            568/2271            =======>-------------------- 25% %   2 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            861/2271            ==========>----------------- 37% %   4 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            1350/2271           ================>----------- 59% %   5 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            1904/2271           =======================>---- 83% %   6 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2188/2271           ==========================>- 96% %   8 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2189/2271           ==========================>- 96% %   9 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2190/2271           ===========================> 96% %   12 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2191/2271           ===========================> 96% %   26 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2192/2271           ===========================> 96% %   27 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2194/2271           ===========================> 96% %   29 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         0/2337              >--------------------------- 0% %    < 1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         21/2337             >--------------------------- 0% %    1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         861/2337            ==========>----------------- 36% %   3 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         1315/2337           ===============>------------ 56% %   4 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         1913/2337           ======================>----- 81% %   5 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2187/2337           ==========================>- 93% %   27 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2188/2337           ==========================>- 93% %   34 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             376/2286            ====>----------------------- 16% %   1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             861/2286            ==========>----------------- 37% %   3 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             1327/2286           ================>----------- 58% %   4 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2059/2286           =========================>-- 90% %   5 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2188/2286           ==========================>- 95% %   6 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2189/2286           ==========================>- 95% %   7 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2190/2286           ==========================>- 95% %   12 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2191/2286           ==========================>- 95% %   30 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2192/2286           ==========================>- 95% %   32 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2194/2286           ==========================>- 95% %   33 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            0/2299              >--------------------------- 0% %    < 1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            357/2299            ====>----------------------- 15% %   1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            861/2299            ==========>----------------- 37% %   3 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            1047/2299           ============>--------------- 45% %   4 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            1708/2299           ====================>------- 74% %   5 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2188/2299           ==========================>- 95% %   7 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2189/2299           ==========================>- 95% %   9 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2190/2299           ==========================>- 95% %   14 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2191/2299           ==========================>- 95% %   31 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2192/2299           ==========================>- 95% %   33 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2194/2299           ==========================>- 95% %   35 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      0/2299              >--------------------------- 0% %    1 sec
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      421/2299            =====>---------------------- 18% %   2 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      861/2299            ==========>----------------- 37% %   4 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      1140/2299           =============>-------------- 49% %   5 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      1833/2299           ======================>----- 79% %   6 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2188/2299           ==========================>- 95% %   8 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2189/2299           ==========================>- 95% %   9 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2190/2299           ==========================>- 95% %   15 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2191/2299           ==========================>- 95% %   33 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2192/2299           ==========================>- 95% %   34 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2194/2299           ==========================>- 95% %   36 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2299/2299           ============================ 100% %  36 secs
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	[1A[2K
+ DEBUG [df924fab] 	frontend/Magento/blank/en_US            2271/2271           ============================ 100% %  29 secs             
+adminhtml/Magento/backend/en_US         2337/2337           ============================ 100% %  34 secs             
+frontend/Magento/luma/en_US             2286/2286           ============================ 100% %  33 secs             
+frontend/Solwin/freego/en_US            2299/2299           ============================ 100% %  35 secs             
+frontend/Solwin/freego_child/en_US      2299/2299           ============================ 100% %  36 secs
+ DEBUG [df924fab] 	
+Execution time: 184.93453383446
+  INFO [df924fab] Finished in 189.049 seconds with exit status 0 (successful).
+  INFO Static content version: 1562200257
+ DEBUG Uploading /var/www/html/stage/releases/20190704002655/pub/static/deployed_version.txt 0.0%
+  INFO Uploading /var/www/html/stage/releases/20190704002655/pub/static/deployed_version.txt 100.0%
+ DEBUG [faa2afe4] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [faa2afe4] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [faa2afe4] Finished in 0.354 seconds with exit status 0 (successful).
+  INFO [3d8c8df4] Running /usr/bin/env php -f bin/magento -- setup:di:compile --no-ansi as vagrant@34.76.138.14
+ DEBUG [3d8c8df4] Command: cd /var/www/html/stage/releases/20190704002655 && ( export MAGE_MODE="production" ; /usr/bin/env php -f bin/magento -- setup:di:compile --no-ansi )
+ DEBUG [3d8c8df4] 	Compilation was started.
+ DEBUG [3d8c8df4] 	%message% 0/7 [>---------------------------]   0% < 1 sec 68.0 MiB
+ DEBUG [3d8c8df4] 	%message% 0/7 [>---------------------------]   0% < 1 sec 68.0 MiB
+ DEBUG [3d8c8df4] 	Proxies code generation... 0/7 [>------------------------]   0% < 1 sec 68.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Proxies code generation... 1/7 [===>---------------------]  14% 1 sec 74.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Repositories code generation... 1/7 [===>------------------]  14% 1 sec 74.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Repositories code generation... 2/7 [=====>-------------]  28% 25 secs 214.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Service data attributes generation... 2/7 [===>---------]  28% 25 secs 214.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Service data attributes generation... 3/7 [=====>-------]  42% 26 secs 214.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Application code generator... 3/7 [=====>-------]  42% 26 secs 214.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Application code generator... 4/7 [=======>-----]  57% 40 secs 242.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Interceptors generation... 4/7 [=======>-----]  57% 40 secs 242.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Interceptors generation... 5/7 [=========>---]  71% 59 secs 266.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Area configuration aggregation... 5/7 [=========>---]  71% 59 secs 266.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Area configuration aggregation... 6/7 [===========>-]  85% 1 min 352.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Interception cache generation... 6/7 [===========>-]  85% 1 min 352.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Interception cache generation... 7/7 [=============] 100% 1 min 354.0 MiB
+ DEBUG [3d8c8df4] 	
+ DEBUG [3d8c8df4] 	Generated code and dependency injection configuration successfully.
+  INFO [3d8c8df4] Finished in 102.107 seconds with exit status 0 (successful).
+  INFO [af44c4fa] Running /usr/bin/env ln -fsn /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190704002655/app/etc/env.php as vagrant@34.76.138.14
+ DEBUG [af44c4fa] Command: /usr/bin/env ln -fsn /var/www/html/stage/shared/app/etc/env.php /var/www/html/stage/releases/20190704002655/app/etc/env.php
+  INFO [af44c4fa] Finished in 0.301 seconds with exit status 0 (successful).
+ DEBUG [8ffe82d2] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [8ffe82d2] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [8ffe82d2] Finished in 0.253 seconds with exit status 0 (successful).
+  INFO [37f884e3] Running /usr/bin/env php -f bin/magento -- deploy:mode:set production --skip-compilation as vagrant@34.76.138.14
+ DEBUG [37f884e3] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env php -f bin/magento -- deploy:mode:set production --skip-compilation
+ DEBUG [37f884e3] 	Enabled production mode.
+  INFO [37f884e3] Finished in 8.043 seconds with exit status 0 (successful).
+ DEBUG [45f251c7] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [45f251c7] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [45f251c7] Finished in 0.328 seconds with exit status 0 (successful).
+  INFO [264645cf] Running /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type d ! -perm 2770 -exec chmod 2770 {} + as vagrant@34.76.138.14
+ DEBUG [264645cf] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type d ! -perm 2770 -exec chmod 2770 {} +
+  INFO [264645cf] Finished in 10.943 seconds with exit status 0 (successful).
+  INFO [4c96e679] Running /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type f ! -perm 660 -exec chmod 660 {} + as vagrant@34.76.138.14
+ DEBUG [4c96e679] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env find /var/www/html/stage/releases/20190704002655 -type f ! -perm 660 -exec chmod 660 {} +
+  INFO [4c96e679] Finished in 1.371 seconds with exit status 0 (successful).
+  INFO [5a5744db] Running /usr/bin/env chmod +x /var/www/html/stage/releases/20190704002655/bin/magento as vagrant@34.76.138.14
+ DEBUG [5a5744db] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env chmod +x /var/www/html/stage/releases/20190704002655/bin/magento
+  INFO [5a5744db] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [1e63a541] Running [ -d /var/www/html/stage/current ] as vagrant@34.76.138.14
+ DEBUG [1e63a541] Command: [ -d /var/www/html/stage/current ]
+ DEBUG [1e63a541] Finished in 0.272 seconds with exit status 0 (successful).
+ DEBUG [57cfa0a1] Running if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [57cfa0a1] Command: if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi
+ DEBUG [57cfa0a1] Finished in 0.288 seconds with exit status 0 (successful).
+  INFO Checking maintenance status...
+ DEBUG [154e87ca] Running /usr/bin/env php -f bin/magento -- maintenance:status as vagrant@34.76.138.14
+ DEBUG [154e87ca] Command: cd /var/www/html/stage/current && /usr/bin/env php -f bin/magento -- maintenance:status
+ DEBUG [154e87ca] 	Status: maintenance mode is not active
+ DEBUG [154e87ca] 	List of exempt IP-addresses: none
+ DEBUG [154e87ca] Finished in 18.747 seconds with exit status 0 (successful).
+  INFO Maintenance mode is currently inactive.
+  INFO 
+ DEBUG [ada7ba60] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [ada7ba60] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [ada7ba60] Finished in 0.254 seconds with exit status 0 (successful).
+ DEBUG [396521b8] Running /usr/bin/env php -f bin/magento -- setup:db:status --help >/dev/null 2>&1 as vagrant@34.76.138.14
+ DEBUG [396521b8] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env php -f bin/magento -- setup:db:status --help >/dev/null 2>&1
+ DEBUG [396521b8] Finished in 1.670 seconds with exit status 0 (successful).
+  INFO Checking database status...
+ DEBUG [a8282f9a] Running /usr/bin/env php -f bin/magento -- setup:db:status as vagrant@34.76.138.14
+ DEBUG [a8282f9a] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env php -f bin/magento -- setup:db:status
+ DEBUG [a8282f9a] 	All modules are up to date.
+ DEBUG [a8282f9a] Finished in 5.707 seconds with exit status 0 (successful).
+  INFO All modules are up to date. No database updates should occur during this release.
+  INFO 
+  INFO Checking config status...
+ DEBUG [e053aad1] Running /usr/bin/env md5sum /var/www/html/stage/releases/20190704002655/app/etc/config.php as vagrant@34.76.138.14
+ DEBUG [e053aad1] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env md5sum /var/www/html/stage/releases/20190704002655/app/etc/config.php
+ DEBUG [e053aad1] 	4dabc8709d070249e04b798bea9169bf  /var/www/html/stage/releases/20190704002655/app/etc/config.php
+ DEBUG [e053aad1] Finished in 0.345 seconds with exit status 0 (successful).
+ DEBUG [d2eaf2eb] Running [ -f /var/www/html/stage/current/app/etc/config.php ] as vagrant@34.76.138.14
+ DEBUG [d2eaf2eb] Command: [ -f /var/www/html/stage/current/app/etc/config.php ]
+ DEBUG [d2eaf2eb] Finished in 0.415 seconds with exit status 0 (successful).
+ DEBUG [5e9ddf86] Running /usr/bin/env md5sum /var/www/html/stage/current/app/etc/config.php as vagrant@34.76.138.14
+ DEBUG [5e9ddf86] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env md5sum /var/www/html/stage/current/app/etc/config.php
+ DEBUG [5e9ddf86] 	4dabc8709d070249e04b798bea9169bf  /var/www/html/stage/current/app/etc/config.php
+ DEBUG [5e9ddf86] Finished in 0.313 seconds with exit status 0 (successful).
+  INFO <release_path>/app/etc/config.php hash: 4dabc8709d070249e04b798bea9169bf
+  INFO <current_path>/app/etc/config.php hash: 4dabc8709d070249e04b798bea9169bf
+  INFO 
+  INFO Disabling maintenance mode management...
+  INFO There are no database updates or config changes. This is a zero-down deployment.
+ DEBUG [67c70967] Running [ -f /var/www/html/stage/current/bin/magento ] as vagrant@34.76.138.14
+ DEBUG [67c70967] Command: [ -f /var/www/html/stage/current/bin/magento ]
+ DEBUG [67c70967] Finished in 0.256 seconds with exit status 0 (successful).
+ DEBUG [47843fa8] Running if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [47843fa8] Command: if test ! -d /var/www/html/stage/current; then echo "Directory does not exist '/var/www/html/stage/current'" 1>&2; false; fi
+ DEBUG [47843fa8] Finished in 0.258 seconds with exit status 0 (successful).
+ DEBUG [acc3b957] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [acc3b957] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [acc3b957] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [a159c4f1] Running /usr/bin/env php -f bin/magento -- app:config:import --help >/dev/null 2>&1 as vagrant@34.76.138.14
+ DEBUG [a159c4f1] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env php -f bin/magento -- app:config:import --help >/dev/null 2>&1
+ DEBUG [a159c4f1] Finished in 1.624 seconds with exit status 0 (successful).
+ DEBUG [d8971bd1] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [d8971bd1] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [d8971bd1] Finished in 0.414 seconds with exit status 0 (successful).
+ DEBUG [a2e1769f] Running /usr/bin/env php -f bin/magento -- module:status --no-ansi as vagrant@34.76.138.14
+ DEBUG [a2e1769f] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env php -f bin/magento -- module:status --no-ansi
+ DEBUG [a2e1769f] 	List of enabled modules:
+ DEBUG [a2e1769f] 	Magento_Store
+Magento_Directory
+Magento_Theme
+Magento_Backend
+Magento_Variable
+Magento_Eav
+Magento_AdminNotification
+MSP_ReCaptcha
+Magento_Config
+Magento_Indexer
+Magento_AdvancedPricingImportExport
+Magento_Search
+Magento_Amqp
+Magento_Security
+Magento_User
+Magento_Authorization
+Magento_Customer
+Magento_Cms
+Magento_Quote
+Magento_Backup
+Magento_Rule
+Magento_Catalog
+Magento_GraphQl
+Magento_BundleImportExport
+Magento_CacheInvalidate
+Magento_CatalogRule
+Magento_SalesSequence
+Magento_Integration
+Magento_EavGraphQl
+Magento_CatalogImportExport
+Magento_Payment
+Magento_CatalogInventory
+Magento_Cron
+Magento_Msrp
+Magento_CatalogSearch
+Magento_CatalogUrlRewrite
+Magento_StoreGraphQl
+Magento_Widget
+Magento_Sales
+Magento_Checkout
+Magento_Vault
+Magento_CmsGraphQl
+Magento_CmsUrlRewrite
+Magento_CmsUrlRewriteGraphQl
+MSP_TwoFactorAuth
+Magento_ConfigurableProduct
+Magento_CatalogRuleConfigurable
+Magento_CatalogGraphQl
+Magento_ConfigurableProductSales
+Magento_Contact
+Magento_Cookie
+Magento_Email
+Magento_CurrencySymbol
+Magento_Paypal
+Magento_Analytics
+Magento_CustomerGraphQl
+Magento_CustomerImportExport
+Magento_Deploy
+Magento_Developer
+Magento_Dhl
+Amazon_Core
+Magento_DirectoryGraphQl
+Magento_Downloadable
+Magento_DownloadableGraphQl
+Magento_ImportExport
+Magento_Authorizenet
+Magento_BundleGraphQl
+Magento_AdvancedSearch
+Magento_Elasticsearch
+Magento_Newsletter
+Magento_EncryptionKey
+Magento_Fedex
+Magento_GiftMessage
+Magento_GoogleAdwords
+Magento_GoogleAnalytics
+Magento_Ui
+Magento_UrlRewriteGraphQl
+Magento_GroupedProduct
+Magento_GroupedImportExport
+Magento_GroupedCatalogInventory
+Magento_GroupedProductGraphQl
+Magento_DownloadableImportExport
+Magento_AuthorizenetAcceptjs
+Magento_InstantPurchase
+Magento_CatalogAnalytics
+Magento_Inventory
+Magento_InventoryAdminUi
+Magento_InventoryApi
+Magento_InventoryBundleProduct
+Magento_InventoryBundleProductAdminUi
+Magento_InventoryCatalog
+Magento_InventorySales
+Magento_InventoryCatalogAdminUi
+Magento_InventoryCatalogApi
+Magento_InventoryCatalogSearch
+Magento_InventoryConfigurableProduct
+Magento_InventoryConfigurableProductAdminUi
+Magento_InventoryConfigurableProductIndexer
+Magento_InventoryConfiguration
+Magento_InventoryConfigurationApi
+Magento_InventoryDistanceBasedSourceSelection
+Magento_InventoryDistanceBasedSourceSelectionAdminUi
+Magento_InventoryDistanceBasedSourceSelectionApi
+Magento_InventoryElasticsearch
+Magento_InventoryGroupedProduct
+Magento_InventoryGroupedProductAdminUi
+Magento_InventoryGroupedProductIndexer
+Magento_InventoryImportExport
+Magento_InventoryIndexer
+Magento_InventoryLowQuantityNotification
+Magento_InventoryLowQuantityNotificationAdminUi
+Magento_InventoryLowQuantityNotificationApi
+Magento_InventoryMultiDimensionalIndexerApi
+Magento_InventoryProductAlert
+Magento_InventoryReservations
+Magento_InventoryReservationsApi
+Magento_InventoryCache
+Magento_InventorySalesAdminUi
+Magento_InventorySalesApi
+Magento_InventorySalesFrontendUi
+Magento_InventorySetupFixtureGenerator
+Magento_InventoryShipping
+Magento_Shipping
+Magento_InventorySourceDeductionApi
+Magento_InventorySourceSelection
+Magento_InventorySourceSelectionApi
+Magento_LayeredNavigation
+Magento_Marketplace
+Magento_MediaStorage
+Magento_MessageQueue
+Magento_ConfigurableImportExport
+Magento_MsrpConfigurableProduct
+Magento_MsrpGroupedProduct
+Magento_Multishipping
+Magento_MysqlMq
+Magento_NewRelicReporting
+Magento_Captcha
+Magento_OfflinePayments
+Magento_SalesRule
+Magento_PageCache
+Magento_ProductAlert
+Magento_Braintree
+Magento_Persistent
+Magento_Reports
+Magento_ProductVideo
+Klarna_Core
+Magento_QuoteAnalytics
+Magento_QuoteGraphQl
+Magento_ReleaseNotification
+Magento_Review
+Magento_RequireJs
+Magento_SendFriend
+Magento_ReviewAnalytics
+Magento_Robots
+Magento_Rss
+Amazon_Login
+Amazon_Payment
+Magento_SalesAnalytics
+Magento_SalesGraphQl
+Magento_SalesInventory
+Magento_OfflineShipping
+Klarna_Ordermanagement
+Magento_UrlRewrite
+Magento_Elasticsearch6
+Magento_CustomerAnalytics
+Magento_Wishlist
+Magento_SendFriendGraphQl
+Magento_InventoryShippingAdminUi
+Magento_Signifyd
+Magento_Sitemap
+Magento_CatalogInventoryGraphQl
+Magento_ConfigurableProductGraphQl
+Magento_Webapi
+Magento_SwaggerWebapi
+Magento_SwaggerWebapiAsync
+Magento_Swatches
+Magento_SwatchesGraphQl
+Magento_SwatchesLayeredNavigation
+Magento_Tax
+Magento_TaxGraphQl
+Magento_TaxImportExport
+Magento_CheckoutAgreements
+Magento_ThemeGraphQl
+Magento_Tinymce3
+Magento_Translation
+Magento_GoogleOptimizer
+Magento_Ups
+Magento_SampleData
+Magento_CatalogUrlRewriteGraphQl
+Magento_AsynchronousOperations
+Magento_Usps
+Magento_Bundle
+Klarna_Kp
+Magento_Version
+Magento_Swagger
+Magento_WebapiAsync
+Magento_WebapiSecurity
+Magento_Weee
+Magento_WeeeGraphQl
+Magento_CatalogWidget
+Dotdigitalgroup_Email
+Magento_WishlistAnalytics
+Magento_WishlistGraphQl
+Solwin_Core
+Solwin_Cpanel
+Solwin_ScrolltoTop
+Solwin_Soldout
+Temando_Shipping
+Vertex_Tax
+ DEBUG [a2e1769f] 	
+ DEBUG [a2e1769f] 	List of disabled modules:
+ DEBUG [a2e1769f] 	None
+ DEBUG [a2e1769f] 	
+ DEBUG [a2e1769f] Finished in 1.640 seconds with exit status 0 (successful).
+  INFO [c56683d6] Running /usr/bin/env ln -s /var/www/html/stage/releases/20190704002655 /var/www/html/stage/releases/current as vagrant@34.76.138.14
+ DEBUG [c56683d6] Command: /usr/bin/env ln -s /var/www/html/stage/releases/20190704002655 /var/www/html/stage/releases/current
+  INFO [c56683d6] Finished in 0.340 seconds with exit status 0 (successful).
+  INFO [9b7b89ea] Running /usr/bin/env mv /var/www/html/stage/releases/current /var/www/html/stage as vagrant@34.76.138.14
+ DEBUG [9b7b89ea] Command: /usr/bin/env mv /var/www/html/stage/releases/current /var/www/html/stage
+  INFO [9b7b89ea] Finished in 0.256 seconds with exit status 0 (successful).
+ DEBUG [031aa848] Running if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [031aa848] Command: if test ! -d /var/www/html/stage/releases/20190704002655; then echo "Directory does not exist '/var/www/html/stage/releases/20190704002655'" 1>&2; false; fi
+ DEBUG [031aa848] Finished in 0.262 seconds with exit status 0 (successful).
+  INFO [a6e1834f] Running /usr/bin/env php -f bin/magento -- cache:flush as vagrant@34.76.138.14
+ DEBUG [a6e1834f] Command: cd /var/www/html/stage/releases/20190704002655 && /usr/bin/env php -f bin/magento -- cache:flush
+ DEBUG [a6e1834f] 	Flushed cache types:
+ DEBUG [a6e1834f] 	config
+layout
+block_html
+collections
+reflection
+db_ddl
+compiled_config
+eav
+customer_notification
+config_integration
+config_integration_api
+full_page
+config_webservice
+translate
+vertex
+  INFO [a6e1834f] Finished in 2.928 seconds with exit status 0 (successful).
+ DEBUG [2ec4e966] Running /usr/bin/env ls -x /var/www/html/stage/releases as vagrant@34.76.138.14
+ DEBUG [2ec4e966] Command: /usr/bin/env ls -x /var/www/html/stage/releases
+ DEBUG [2ec4e966] 	20190703231204	20190703232311	20190703233530	20190704002655
+ DEBUG [2ec4e966] Finished in 0.408 seconds with exit status 0 (successful).
+  INFO Keeping 3 of 4 deployed releases on 34.76.138.14
+ DEBUG [49d61840] Running [ -d /var/www/html/stage/current ] as vagrant@34.76.138.14
+ DEBUG [49d61840] Command: [ -d /var/www/html/stage/current ]
+ DEBUG [49d61840] Finished in 0.251 seconds with exit status 0 (successful).
+ DEBUG [b7115f66] Running /usr/bin/env readlink /var/www/html/stage/current as vagrant@34.76.138.14
+ DEBUG [b7115f66] Command: /usr/bin/env readlink /var/www/html/stage/current
+ DEBUG [b7115f66] 	/var/www/html/stage/releases/20190704002655
+ DEBUG [b7115f66] Finished in 0.265 seconds with exit status 0 (successful).
+  INFO [5e7dfd5e] Running /usr/bin/env rm -rf /var/www/html/stage/releases/20190703231204 as vagrant@34.76.138.14
+ DEBUG [5e7dfd5e] Command: /usr/bin/env rm -rf /var/www/html/stage/releases/20190703231204
+  INFO [5e7dfd5e] Finished in 43.156 seconds with exit status 0 (successful).
+ DEBUG [7d005876] Running if test ! -d /var/www/html/stage/releases; then echo "Directory does not exist '/var/www/html/stage/releases'" 1>&2; false; fi as vagrant@34.76.138.14
+ DEBUG [7d005876] Command: if test ! -d /var/www/html/stage/releases; then echo "Directory does not exist '/var/www/html/stage/releases'" 1>&2; false; fi
+ DEBUG [7d005876] Finished in 0.311 seconds with exit status 0 (successful).
+  INFO [3efd2a17] Running /usr/bin/env echo "Branch stage (at 811956355ff6b3ef0e84e6cc6452a54658444cbc) deployed as release 20190704002655 by vagrant" >> /var/www/html/stage/revisions.log as vagrant@34.76.138.14
+ DEBUG [3efd2a17] Command: cd /var/www/html/stage/releases && /usr/bin/env echo "Branch stage (at 811956355ff6b3ef0e84e6cc6452a54658444cbc) deployed as release 20190704002655 by vagrant" >> /var/www/html/stage/revisions.log
+  INFO [3efd2a17] Finished in 0.312 seconds with exit status 0 (successful).
