@@ -3128,9 +3128,12 @@ Trace: <pre>#1 Magento\Theme\Model\View\Design->setDesignTheme(6, 'frontend') ca
 [2019-07-15 13:54:31] main.ERROR: Warning: getimagesize(pub/static/adminhtml/Magento/backend/en_US/Magento_Cms/images/wysiwyg_skin_image.png): failed to open stream: No such file or directory in /var/www/html/dev_env/vendor/magento/framework/Image/Adapter/AbstractAdapter.php on line 305 [] []
 [2019-07-15 13:55:06] main.ERROR: Warning: getimagesize(pub/static/adminhtml/Magento/backend/en_US/Magento_Cms/images/wysiwyg_skin_image.png): failed to open stream: No such file or directory in /var/www/html/dev_env/vendor/magento/framework/Image/Adapter/AbstractAdapter.php on line 305 [] []
 [2019-07-15 13:56:39] main.ERROR: Warning: getimagesize(pub/static/adminhtml/Magento/backend/en_US/Magento_Cms/images/wysiwyg_skin_image.png): failed to open stream: No such file or directory in /var/www/html/dev_env/vendor/magento/framework/Image/Adapter/AbstractAdapter.php on line 305 [] []
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 9fb2addb1... after restore db from production
 =======
 >>>>>>> parent of 9fb2addb1... after restore db from production
 =======
 >>>>>>> parent of 9fb2addb1... after restore db from production
+=======
+>>>>>>> ce041ac2274920fd73eb559c03cfaf146561c29a

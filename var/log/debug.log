@@ -4419,6 +4419,7 @@ Trace: <pre>#1 Magento\Theme\Model\View\Design->setDesignTheme(6, 'frontend') ca
 [2019-07-15 14:28:03] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/admin/cms/block/save/key/5384f8d4fb726c8a59c9c6b726d25b77626c40b4e0d4474dc228a7db120a76d1/","invalidateInfo":{"tags":["cms_b_footer_our_services","FPC"],"mode":"matchingTag"}} []
 [2019-07-15 14:28:03] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/admin/cms/block/save/key/5384f8d4fb726c8a59c9c6b726d25b77626c40b4e0d4474dc228a7db120a76d1/","invalidateInfo":{"tags":["cms_b_8","FPC"],"mode":"matchingTag"}} []
 [2019-07-15 14:28:03] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://192.168.10.10/dev_env/admin/cms/block/save/key/5384f8d4fb726c8a59c9c6b726d25b77626c40b4e0d4474dc228a7db120a76d1/","invalidateInfo":{"tags":["cms_b_footer_our_services","FPC"],"mode":"matchingTag"}} []
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 9fb2addb1... after restore db from production
 =======
@@ -4428,3 +4429,5 @@ Trace: <pre>#1 Magento\Theme\Model\View\Design->setDesignTheme(6, 'frontend') ca
 [2019-07-15 15:13:17] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
 [2019-07-15 15:13:22] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http://192.168.10.10/dev_env/","invalidateInfo":{"identifier":"interception"}} []
 [2019-07-15 15:13:32] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http://192.168.10.10/dev_env/","invalidateInfo":{"identifier":"SYSTEM_CONFIG"}} []
+=======
+>>>>>>> ce041ac2274920fd73eb559c03cfaf146561c29a
